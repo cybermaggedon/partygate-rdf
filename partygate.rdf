@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dbpedia="http://dbpedia.org/ontology/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pg="http://e623fd-partygate/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <rdfs:label>May 15, Wine and Cheese Party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-05-15</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/guardian-boris-pictured"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/boris"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/carrie-johnson"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/matt-hancock"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/martin-reynolds"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-10-garden"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:weather xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/sunny"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/wine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/cheese"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:contravenes xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/garden-gatherings-banned"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:contravenes xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/meeting-in-parks-2-people"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:context xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/lockdown-1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:context xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/may-15-421-deaths"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <ns0:justification xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/people-at-work-talking-about-work"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-wine-cheese">
+    <dbpedia:thumbnail rdf:resource="https://i.guim.co.uk/img/media/81492860b5b6ce0c311e25db6b6e2bf2536b992f/0_0_1826_2100/master/1826.jpg?width=620&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d78255ecfdce782d81ffb1e0b8fd72a9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <rdfs:label>May 20, BYOB party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-05-20</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/huffington-boris-admits"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-10-garden"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:invitations-sent xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/martin-reynolds"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Make the most of the lovely weather</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Bring your own booze!</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">long tables laden with drink, crisps, sausagerolls and other picnic food</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">it was a proper booze up</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:weather xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/sunny"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/crisps"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/sausage-rolls"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:context xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/oliver-dowden-you-can-meet-one-person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:justification xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/thought-it-was-work-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <ns0:justification xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/sue-grey-investigating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-20-byob">
+    <dbpedia:thumbnail rdf:resource="https://i2-prod.irishmirror.ie/incoming/article25941809.ece/ALTERNATES/s615b/3_Prime-Ministers-Questions-in-parliament-in-London.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <rdfs:label>November 13, Cummings quitting flat party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-11-13</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/independent-cummings-alleges-flat-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">drank their socks off</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">loud music pumping out of the flat</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">victory party</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-11-flat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/boris"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/carrie-johnson"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:context xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/nov-13-436-deaths"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <ns0:justification xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/total-nonsense"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cummings-quit-flat-party">
+    <dbpedia:thumbnail rdf:resource="https://i2-prod.dailyrecord.co.uk/incoming/article25669213.ece/ALTERNATES/s615b/0_JS222988331.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <rdfs:label>November 13, Lee Cain leaving drinks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-11-13</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">a relatively small number of people gathered for drinks</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-10-round-table-room"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/boris"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/lee-campbell"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-lee-cain-leaving-drinks">
+    <dbpedia:thumbnail rdf:resource="https://i2-prod.mirror.co.uk/incoming/article23008431.ece/ALTERNATES/s615b/1_Screenshot-2020-11-13-at-222311.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <rdfs:label>November 25, Treasury drinks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-11-25</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">around two dozen civil servants</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">wine and beer brought in</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/wine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/beer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-25-treasury-drinks">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/treasury"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <rdfs:label>November 27, Cleo Watson leaving drinks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-11-27</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">there was no party on Fri 27/11</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">red herring</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">40 to 50 people crammed into a room in number 10</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Boris Johnson gave a speech</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/boris"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/cleo-watson"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/wine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:context xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/if-we-ease-off-now"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:justification xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/sue-grey-investigating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-27-cleo-watson">
+    <ns0:justification xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/dc-there-was-no-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <rdfs:label>December 10, Department for Education</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-12-10</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/canapes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">There were lots of people gathered in the cafe area, mingling and drinking wine</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">It was just so reckless</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/susan-acland-hood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-10-department-for-education">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">He hosted a drinks do when people were considering whether they could spend Christmas with their families</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <rdfs:label>December 14, Raucous party at CCHQ</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-12-14</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/canapes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Some of the group are shown wearing paper hats while one is sporting a House of Commons Christmas jumper</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">a sumptuous spread of food sits on the side</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/shaun-bailey"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <dbpedia:thumbnail rdf:resource="https://i2-prod.dailyrecord.co.uk/news/scottish-news/article25720815.ece/ALTERNATES/s615b/0_JS253256171jpeg.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:contravenes xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/london-tier-2-lockdown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-14-cchq">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/cchq"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <rdfs:label>December 15, Boris hosts No. 10 Christmas Quiz</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-12-15</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Boris Johnson hosted a Christmas quiz virtually but with two staff by his side, and sources said many stuff huddled by computers in No10 to take part while drinking booze from a local Tesco Metro</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:contravenes xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/london-tier-2-lockdown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">London was then under Tier 2 regulations banning social mixing between households</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Official guidance also stated: “You must not have a work Christmas lunch or party, where that is a primarily social activity and is not otherwise permitted by the rules in your tier.”</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/boris"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <dbpedia:thumbnail rdf:resource="https://i2-prod.dailyrecord.co.uk/incoming/article25772789.ece/ALTERNATES/s615b/0_JS253011564-1.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:contravenes xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/london-tier-2-lockdown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-15-quiz">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-16-grant">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-16-grant">
+    <rdfs:label>December 16, Grant Shapps' staff Christmas party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-16-grant">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-12-16</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-16-grant">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-16-grant">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-16-grant">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">The same day, the Government imposed Tier 3 curbs on the capital, which saw pubs closed and banned people from different households mixing</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-16-grant">
+    <ns0:contravenes xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/london-tier-3-lockdown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-16-grant">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/whitehall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <rdfs:label>December 17, Kate Josephs leaving drinks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-12-17</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <ns0:contravenes xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/london-tier-3-lockdown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/kate-josephs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">The official who was in charge of writing Covid rules admitted to having a leaving do while indoor socialising was banned</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">I am truly sorry that I did this and for the anger that people will feel as a result</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-17-kate-josephs">
+    <dbpedia:thumbnail rdf:resource="https://i2-prod.mirror.co.uk/incoming/article25949747.ece/ALTERNATES/s338a/0_Kate-Josephs_7494.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <rdfs:label>December 18, Party at number 10</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2020-12-18</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:contravenes xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/london-tier-3-lockdown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">According to later reports, people made speeches and stayed until 2am</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">No. 10 dodged questions for a week before bombshell video emerged of staff joking about it - prompting former Press Secretary Allegra Stratton to resign</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">there had been wine and cheese</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">not socially distanced</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">It was a COVID nightmare</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-18-no10-party">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-top-aide-leaving-do">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-top-aide-leaving-do">
+    <rdfs:label>December 2020 (date unknown), leaving do for top aide</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-top-aide-leaving-do">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-top-aide-leaving-do">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-top-aide-leaving-do">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">The Prime Minister gave a speech at an event to mark defence aide Captain Steve Higham’s Downing Street departure before Christmas</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-top-aide-leaving-do">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Boris Johnson attended a leaving do for his defence adviser in the run-up to Christmas 2020</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-top-aide-leaving-do">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/steve-higham"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-top-aide-leaving-do">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/boris"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <rdfs:label>December 2020 (date unknown), Department for Work and Pensions</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/takeaway-food"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">There is a constant flow of booze in the office</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Political staff and officials would frequently drink after work until the early hours, and order takeaway food to Ms Coffey’s DWP office - despite bans on hospitality and office parties</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/therese-coffey"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-dept-work-pensions">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/dwp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <rdfs:label>December 2020 (date unknown), Parties investigator had party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/whitehall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Cabinet Secretary Simon Case had to recuse himself from probing parties after it emerged his own office held lockdown-busting parties last year</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Number 10 has insisted the Cabinet Secretary’s inquiry would be 'credible' and 'independent'</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">attended by around 15 people and featured drinking and music</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">reports on the Guido Fawkes blog revealed two parties - one planned, the second an impromptu gathering after work - took place in Mr Case's office at 70 Whitehall</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dec-simon-case">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/simon-case"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <rdfs:label>April 16 2021, Suitcase of wine party on eve of Philip's funeral</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:date xmlns:ns0="http://e623fd-partygate/p#">2021-04-16</ns0:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:context xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/eve-of-philips-funeral"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/herald-james-slack-apologises"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">in the basement, a staffer nicknamed “DJ” was blaring out tunes from a laptop on a photocopier at a boozy party</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">One No. 10 staffer was also dispatched to the Co-Op on the Strand, 10 minutes’ walk away, to fill a suitcase with wine</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Staff held two leaving dos, one for a photographer and the other for former chief spin doctor James Slack</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">staff had a go on a swing belonging to the PM's baby son Wilf and broke it</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/boris"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/suitcase-of-wine">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/james-slack"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <rdf:type rdf:resource="http://e623fd-partygate/party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <rdfs:label>Throughout: Wine time Fridays</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <ns0:report xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/mirror-every-single-party"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <ns0:location xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/no-10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Downing Street staff held 'wine-time Fridays' throughout the pandemic with Boris Johnson regularly witnessing the gatherings</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">Sources told the Mirror the Prime Minister encouraged aides to “let off steam” despite indoor socialising being banned under lockdown rules</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">event was so popular that staff even invested in a £142 drinks fridge to keep their bottles of white wine, Prosecco and beer cool</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <ns0:quote xmlns:ns0="http://e623fd-partygate/p#">aides took turns on Fridays to visit the local Tesco Metro in Westminster with a wheely suitcase</ns0:quote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <ns0:consumed xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/alcohol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <dbpedia:thumbnail rdf:resource="https://i2-prod.mirror.co.uk/incoming/article25951862.ece/ALTERNATES/n310p/0_IMG_9294JPG.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine-time-fridays">
+    <ns0:attended-by xmlns:ns0="http://e623fd-partygate/p#" rdf:resource="http://e623fd-partygate/boris"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/boris">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/boris">
+    <rdfs:label>Boris Johnson</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/carrie-johnson">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/carrie-johnson">
+    <rdfs:label>Carrie Johnson</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/therese-coffey">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/therese-coffey">
+    <rdfs:label>Therese Coffey</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/james-slack">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/james-slack">
+    <rdfs:label>James Slack</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/simon-case">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/simon-case">
+    <rdfs:label>Simon Case</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/kate-josephs">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/kate-josephs">
+    <rdfs:label>Kate Josephs</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/steve-higham">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/steve-higham">
+    <rdfs:label>Captain Steve Higham</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/matt-hancock">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/matt-hancock">
+    <rdfs:label>Matt Hancock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/shaun-bailey">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/shaun-bailey">
+    <rdfs:label>Shaun Bailey</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/martin-reynolds">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/martin-reynolds">
+    <rdfs:label>Martin Reynolds</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/lee-campbell">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/lee-campbell">
+    <rdfs:label>Lee Campbell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cleo-watson">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cleo-watson">
+    <rdfs:label>Cleo Watson</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/susan-acland-hood">
+    <rdf:type rdf:resource="http://e623fd-partygate/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/susan-acland-hood">
+    <rdfs:label>Susan Acland-Hood</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/no-10-garden">
+    <rdf:type rdf:resource="http://e623fd-partygate/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/no-10-garden">
+    <rdfs:label>Garden, 10 Downing Street</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/no-11-flat">
+    <rdf:type rdf:resource="http://e623fd-partygate/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/no-11-flat">
+    <rdfs:label>Prime Minister's flat, 11 Downing Street</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/whitehall">
+    <rdf:type rdf:resource="http://e623fd-partygate/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/whitehall">
+    <rdfs:label>Whitehall</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dwp">
+    <rdf:type rdf:resource="http://e623fd-partygate/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dwp">
+    <rdfs:label>Department for Work and Pensions</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cchq">
+    <rdf:type rdf:resource="http://e623fd-partygate/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cchq">
+    <rdfs:label>Conservative party HQ</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/no-10">
+    <rdf:type rdf:resource="http://e623fd-partygate/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/no-10">
+    <rdfs:label>10 Downing Street</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/treasury">
+    <rdf:type rdf:resource="http://e623fd-partygate/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/treasury">
+    <rdfs:label>Treasury</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/no-10-round-table-room">
+    <rdf:type rdf:resource="http://e623fd-partygate/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/no-10-round-table-room">
+    <rdfs:label>10 Downing Street, round table room</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/sunny">
+    <rdf:type rdf:resource="http://e623fd-partygate/weather"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/sunny">
+    <rdfs:label>Sunny</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/garden-gatherings-banned">
+    <rdf:type rdf:resource="http://e623fd-partygate/rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/garden-gatherings-banned">
+    <rdfs:label>Garden gatherings banned</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/meeting-in-parks-2-people">
+    <rdf:type rdf:resource="http://e623fd-partygate/rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/meeting-in-parks-2-people">
+    <rdfs:label>Meeting in parks limited to 2 people</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/lockdown-1">
+    <rdf:type rdf:resource="http://e623fd-partygate/context"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/lockdown-1">
+    <rdfs:label>Lockdown 1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/eve-of-philips-funeral">
+    <rdf:type rdf:resource="http://e623fd-partygate/context"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/eve-of-philips-funeral">
+    <rdfs:label>The eve of Prince Philip's funeral</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/eve-of-philips-funeral">
+    <dbpedia:thumbnail rdf:resource="https://www.hola.com/us/images/0268-1210245c9a03-72431b486bb7-1000/horizontal-1200/1232358655-collage-u44315206306syh.webp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/london-tier-2-lockdown">
+    <rdf:type rdf:resource="http://e623fd-partygate/rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/london-tier-2-lockdown">
+    <rdfs:label>London tier 2 lockdown</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/london-tier-3-lockdown">
+    <rdf:type rdf:resource="http://e623fd-partygate/rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/london-tier-3-lockdown">
+    <rdfs:label>London tier 3 lockdown</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-421-deaths">
+    <rdf:type rdf:resource="http://e623fd-partygate/context"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/may-15-421-deaths">
+    <rdfs:label>May 15 2021: 421 deaths</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/people-at-work-talking-about-work">
+    <rdf:type rdf:resource="http://e623fd-partygate/justification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/people-at-work-talking-about-work">
+    <rdfs:label>People at work, talking about work</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/thought-it-was-work-event">
+    <rdf:type rdf:resource="http://e623fd-partygate/justification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/thought-it-was-work-event">
+    <rdfs:label>I thought it was a work event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/sue-gray-investigating">
+    <rdf:type rdf:resource="http://e623fd-partygate/justification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/sue-gray-investigating">
+    <rdfs:label>Sue Gray is investigating</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/sue-gray-investigating">
+    <dbpedia:thumbnail rdf:resource="https://i2-prod.mirror.co.uk/incoming/article25920920.ece/ALTERNATES/s615b/0_sue-Gray.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine">
+    <rdf:type rdf:resource="http://e623fd-partygate/consumable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/wine">
+    <rdfs:label>Wine</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/takeaway-food">
+    <rdf:type rdf:resource="http://e623fd-partygate/consumable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/takeaway-food">
+    <rdfs:label>Takeaway food</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cheese">
+    <rdf:type rdf:resource="http://e623fd-partygate/consumable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/cheese">
+    <rdfs:label>Cheese</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/alcohol">
+    <rdf:type rdf:resource="http://e623fd-partygate/consumable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/alcohol">
+    <rdfs:label>Alcohol</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/alcohol">
+    <dbpedia:thumbnail rdf:resource="https://res.cloudinary.com/dyw8mv3b0/image/upload/c_fill,g_face,q_85,w_710,h_355/v1/news/2021_11/2F5AGXK_zkfuvd.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/canapes">
+    <rdf:type rdf:resource="http://e623fd-partygate/consumable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/canapes">
+    <rdfs:label>Canapes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/crisps">
+    <rdf:type rdf:resource="http://e623fd-partygate/consumable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/crisps">
+    <rdfs:label>Crisps</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/sausage-rolls">
+    <rdf:type rdf:resource="http://e623fd-partygate/consumable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/sausage-rolls">
+    <rdfs:label>Sausage rolls</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/other-picnic-food">
+    <rdf:type rdf:resource="http://e623fd-partygate/consumable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/other-picnic-food">
+    <rdfs:label>Other picnic food</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/oliver-dowden-you-can-meet-one-person">
+    <rdf:type rdf:resource="http://e623fd-partygate/context"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/oliver-dowden-you-can-meet-one-person">
+    <rdfs:label>Oliver Dowden: You can meet 1 person outside</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-436-deaths">
+    <rdf:type rdf:resource="http://e623fd-partygate/context"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/nov-13-436-deaths">
+    <rdfs:label>Nov 13 2021: 436 deaths</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/total-nonsense">
+    <rdf:type rdf:resource="http://e623fd-partygate/justification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/total-nonsense">
+    <rdfs:label>Total nonsense</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dc-there-was-no-party">
+    <rdf:type rdf:resource="http://e623fd-partygate/justification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/dc-there-was-no-party">
+    <rdfs:label>Cummings: There was no party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/if-we-ease-off-now">
+    <rdf:type rdf:resource="http://e623fd-partygate/context"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/if-we-ease-off-now">
+    <rdfs:label>If we ease off now...</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/mirror-every-single-party">
+    <rdf:type rdf:resource="http://e623fd-partygate/report"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/mirror-every-single-party">
+    <rdfs:label>Mirror: Every single Downing Street party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/mirror-every-single-party">
+    <dc:relation rdf:resource="https://www.mirror.co.uk/news/politics/every-single-downing-street-party-25952422"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/huffington-boris-admits">
+    <rdf:type rdf:resource="http://e623fd-partygate/report"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/huffington-boris-admits">
+    <rdfs:label>Huffington Post: Boris Johnson Admits He Attended No.10 'BYOB' Garden Party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/huffington-boris-admits">
+    <dc:relation rdf:resource="https://www.huffingtonpost.co.uk/entry/boris-johnson-admits-no10-byob-garden-party_uk_61deaea8e4b04e9d84de29d0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/guardian-boris-pictured">
+    <rdf:type rdf:resource="http://e623fd-partygate/report"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/guardian-boris-pictured">
+    <rdfs:label>Guardian: Boris Johnson and staff pictured with wine in Downing Street garden in May 2020</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/guardian-boris-pictured">
+    <dc:relation rdf:resource="https://www.theguardian.com/politics/2021/dec/19/boris-johnson-and-staff-pictured-with-wine-in-downing-street-garden-in-may-2020"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/independent-cummings-alleges-flat-party">
+    <rdf:type rdf:resource="http://e623fd-partygate/report"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/independent-cummings-alleges-flat-party">
+    <rdfs:label>Independent: Dominic Cummings alleges lockdown party also held in Boris Johnson’s Downing Street flat</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/independent-cummings-alleges-flat-party">
+    <dc:relation rdf:resource="https://www.independent.co.uk/news/uk/politics/dominic-cummings-boris-johnson-party-lockdown-b1972034.html"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/herald-james-slack-apologises">
+    <rdf:type rdf:resource="http://e623fd-partygate/report"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/herald-james-slack-apologises">
+    <rdfs:label>Herald: James Slack apologises for Downing Street party on eve of Prince Philip's funeral</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/herald-james-slack-apologises">
+    <dc:relation rdf:resource="https://www.heraldscotland.com/politics/19847387.james-slack-apologises-downing-street-party-eve-prince-philips-funeral/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#date">
+    <rdfs:label>date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#attended-by">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#attended-by">
+    <rdfs:label>attended by</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#location">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#location">
+    <rdfs:label>location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#weather">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#weather">
+    <rdfs:label>weather</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#contravenes">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#contravenes">
+    <rdfs:label>contravenes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#context">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#context">
+    <rdfs:label>context</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#justification">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#justification">
+    <rdfs:label>justification</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#invitations-sent">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#invitations-sent">
+    <rdfs:label>invitations sent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#quotes">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#quotes">
+    <rdfs:label>quotes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#consumed">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#consumed">
+    <rdfs:label>consumed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#report">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#report">
+    <rdfs:label>report</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/party">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/party">
+    <rdfs:label>Party</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/weather">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/weather">
+    <rdfs:label>Weather</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/person">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/person">
+    <rdfs:label>Person</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/location">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/location">
+    <rdfs:label>Location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/rule">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/rule">
+    <rdfs:label>Rule</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/context">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/context">
+    <rdfs:label>Context</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/justification">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/justification">
+    <rdfs:label>Justification</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/consumable">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/consumable">
+    <rdfs:label>Consumable</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/report">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://e623fd-partygate/report">
+    <rdfs:label>Report</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

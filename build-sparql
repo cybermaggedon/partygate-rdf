@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -x
+
+rm -f sparql
+make sparql
+
+ctrl=$(buildah from cybermaggedon/partygate-base)
+
+buildah run "$ctrl" -- dnf install -y rasqal-devel redland-devel raptor2-devel
+buildah run "$ctrl" -- dnf install -y boost-system boost-coroutine
+buildah add "$ctrl" sparql /usr/local/bin/sparql
+buildah add "$ctrl" partygate.db /usr/local/partygate/
+
+buildah config --workingdir /usr/local/partygate/ "$ctrl"
+buildah config --cmd '/usr/local/bin/sparql 8089 sqlite partygate.db' "$ctrl"
+buildah config --port 8089 "$ctrl"
+
+buildah commit "$ctrl" $1
+
