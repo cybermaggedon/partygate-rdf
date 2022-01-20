@@ -130,9 +130,9 @@ dataset.
 | `http://e623fd-partygate/p#report` | Links a party to a media report |
 | `http://e623fd-partygate/p#weather` | Links a party to reported wather |
 | `http://dbpedia.org/ontolog/thumbnail` | Links to a thumbnail imag URL |
-| `http://purl.org/dc/elements/1./relation` | Links a report to the media articleURL |
-| ``http://www.w3.org/1999/02/22-rdf-synta-ns#type` | Links an object to its tpe |
-| ``http://www.w3.org/2000/01/rdf-schea#label` | Links an object to a human-readable label |
+| `http://purl.org/dc/elements/1.1/relation` | Links a report to the media articleURL |
+| `http://www.w3.org/1999/02/22-rdf-syntax-ns#type` | Links an object to its tpe |
+| `http://www.w3.org/2000/01/rdf-schema#label` | Links an object to a human-readable label |
 
 ### Object types
 
@@ -146,7 +146,7 @@ dataset.
 | `http://e623fd-partygate/person` | A person |
 | `http://e623fd-partygate/report` | A media report |
 | `http://e623fd-partygate/rule` | A restrictive policy, guidance or law |
-| `http://ye623fd-partygate/weather` | A weather condition |
+| `http://e623fd-partygate/weather` | A weather condition |
 
 ## Implementation / self-hosting
 
