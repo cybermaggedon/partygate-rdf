@@ -114,6 +114,40 @@ The dataset is a RDF triples.  Apart from the 'type' and 'label' properties
 the dataset uses an internal ontology.  RDFS types are contained within the
 dataset.
 
+### Object properties
+
+| Property | Description |
+| -------- | ----------- |
+| http://e623fd-partygate/p#attended-by | Links a party to an attending person |
+| http://e623fd-partygate/p#consumed | Links a party to consumables |
+| http://e623fd-partygate/p#context | Links a party to another (possibly unrelated) newsworthy context |
+| http://e623fd-partygate/p#contravenes | Links a party to a rule which is reported to have been contravened |
+| http://e623fd-partygate/p#date | Links a party to a date |
+| http://e623fd-partygate/p#invitations-sent | Links a party to the person who invited attendees |
+| http://e623fd-partygate/p#justification | Links a party to a reported justification for the party |
+| http://e623fd-partygate/p#location | Links a party to its location |
+| http://e623fd-partygate/p#quote | Links a party to a quote in the media |
+| http://e623fd-partygate/p#report | Links a party to a media report |
+| http://e623fd-partygate/p#weather | Links a party to reported weather |
+| <http://dbpedia.org/ontology/thumbnail> | Links to a thumbnail image URL |
+| <http://purl.org/dc/elements/1.1/relation> | Links a report to the media article URL |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> | Links an object to its type |
+| <http://www.w3.org/2000/01/rdf-schema#label> | Links an object to a human-readable label |
+
+### Object types
+
+| Type | Description |
+| ---- | ----------- |
+| http://e623fd-partygate/consumable | Something which can be consumed at a party |
+| http://e623fd-partygate/context | A reported newsworthy context |
+| http://e623fd-partygate/justification | A justification |
+| http://e623fd-partygate/location | A location |
+| http://e623fd-partygate/party | A party |
+| http://e623fd-partygate/person | A person |
+| http://e623fd-partygate/report | A media report |
+| http://e623fd-partygate/rule | A restrictive policy, guidance or law |
+| http://e623fd-partygate/weather | A weather condition |
+
 ## Implementation / self-hosting
 
 If you're curious about the implementation, the included Makefile
