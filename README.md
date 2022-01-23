@@ -1,6 +1,8 @@
 
 # PartyGateRDF - PartyGate tools for linked-data scientists
 
+If you love this project, you can buy ownership on [OpenSea](https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/61161627946114775080556842176300922331287397617562685036131001630759023804417)
+
 ## Introduction
 
 This is a data set containing references to information published by the media
