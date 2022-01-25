@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <style>
+      table, tr, td, th {
+	  border-collapse: collapse;
+	  border: 1px solid black;
+      }
+      td {
+	  padding: 5px;
+      }
+      th {
+	  padding: 5px;
+	  background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+<!-- 
+ http://localhost:8080/query.html?query=SELECT%20%2A%20WHERE%20%7B%20?a%20?b%20?c%20.%20%7D%20LIMIT%205
+-->
+
+    <table id="output">
+    </table>
+
+    <script language="JavaScript">
+
+      var elt = document.getElementById("output");
+
+      function handle() {
+
+	  var resp = this.responseXML;
+
+	  var tr = document.createElement("tr");
+	  elt.appendChild(tr);
+
+	  var vars = resp.getElementsByTagName("head")[0].children;
+	  for (var i = 0; i < vars.length; i++) {
+	      var variable = vars[i].getAttribute("name")
+	      var th = document.createElement("th");
+	      tr.appendChild(th);
+	      th.appendChild(document.createTextNode(variable));
+	  }
+
+	  var rows = resp.getElementsByTagName("results")[0].children;
+
+	  for (var i = 0; i < rows.length; i++) {
+
+	      var tr = document.createElement("tr");
+	      elt.appendChild(tr);
+
+	      for (var j = 0; j < rows[i].children.length; j++) {
+
+		  var item = rows[i].children[j];
+
+		  console.log(item.getAttribute("name"));
+
+		  var val = "";
+		  var intern = item.getElementsByTagName("uri");
+		  if (intern.length > 0) {
+		      val = intern[0].textContent;
+		  } else {
+		      var intern = item.getElementsByTagName("literal");
+		      if (intern.length > 0) {
+			  val = intern[0].textContent;
+		      }
+		  }
+
+		  var td = document.createElement("td");
+		  tr.appendChild(td);
+		  td.appendChild(document.createTextNode(val));
+
+
+	      }
+
+	  }
+
+      }
+
+      var req = new XMLHttpRequest();
+      req.addEventListener("load", handle);
+      req.overrideMimeType("text/xml");
+      const url = "/sparql" + document.location.search;
+      console.log(url);
+      req.open("GET", url);
+      req.send();
+
+    </script>
+
+  </body>
+</html>

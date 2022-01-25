@@ -51,10 +51,11 @@ Here are some example queries:
 
 Query:
 ```
-  SELECT DISTINCT * WHERE {<http://e623fd-partygate/suitcase-of-wine> ?b ?c . }
+  SELECT DISTINCT * WHERE {<http://e623fd-partygate/suitcase-of-wine> ?prop ?value . }
 ```
+[See human-readable results](https://web-wrennwfy6q-ew.a.run.app/query.html?query=SELECT%20DISTINCT%20*%20WHERE%20%7B%3Chttp://e623fd-partygate/suitcase-of-wine%3E%20%3Fprop%20%3Fvalue%20.%20%7D)
 
-[See results from the query](https://web-wrennwfy6q-ew.a.run.app/sparql?query=SELECT%20DISTINCT%20*%20WHERE%20{%3Chttp://e623fd-partygate/suitcase-of-wine%3E%20?b%20?c%20.%20})
+[See raw results from the query](https://web-wrennwfy6q-ew.a.run.app/sparql?query=SELECT%20DISTINCT%20*%20WHERE%20%7B%3Chttp://e623fd-partygate/suitcase-of-wine%3E%20%3Fprop%20%3Fvalue%20.%20%7D)
 
 ### Parties which were known to be attended by Boris
 
@@ -70,7 +71,9 @@ Query:
   }
 ```
 
-[See results](https://web-wrennwfy6q-ew.a.run.app/sparql?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20SELECT%20?party%20WHERE%20{%20?id%20rdfs:label%20?party%20.%20?id%20pgp:attended-by%20pg:boris%20.%20})
+[See human-readable results from this query](https://web-wrennwfy6q-ew.a.run.app/query.html?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20SELECT%20%3Fparty%20WHERE%20%7B%20%3Fid%20rdfs:label%20%3Fparty%20.%20%3Fid%20pgp:attended-by%20pg:boris%20.%20%7D)
+
+[See raw results from this query](https://web-wrennwfy6q-ew.a.run.app/sparql?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20SELECT%20%3Fparty%20WHERE%20%7B%20%3Fid%20rdfs:label%20%3Fparty%20.%20%3Fid%20pgp:attended-by%20pg:boris%20.%20%7D)
 
 ### Parties attended by Boris which were reported to have broken a rule
 
@@ -87,8 +90,9 @@ Query:
     ?a pgp:attended-by pg:boris .
   }
 ```
+[See human-readable results from this query](https://web-wrennwfy6q-ew.a.run.app/query.html?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20%20SELECT%20DISTINCT%20?party%20?breaks%20%20WHERE%20%7B%20%20%20?a%20rdfs:label%20?party%20.%20?a%20pgp:contravenes%20?d%20.%20?d%20rdfs:label%20?breaks%20.%20?a%20pgp:attended-by%20pg:boris%20.%20%7D)
 
-[See results](https://web-wrennwfy6q-ew.a.run.app/sparql?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20%20SELECT%20DISTINCT%20?party%20?breaks%20%20WHERE%20{%20%20%20?a%20rdfs:label%20?party%20.%20?a%20pgp:contravenes%20?d%20.%20?d%20rdfs:label%20?breaks%20.%20?a%20pgp:attended-by%20pg:boris%20.%20})
+[See raw results from this query](https://web-wrennwfy6q-ew.a.run.app/sparql?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20%20SELECT%20DISTINCT%20?party%20?breaks%20%20WHERE%20%7B%20%20%20?a%20rdfs:label%20?party%20.%20?a%20pgp:contravenes%20?d%20.%20?d%20rdfs:label%20?breaks%20.%20?a%20pgp:attended-by%20pg:boris%20.%20%7D)
 
 ### Parties known to be held at Number 10
 
@@ -102,8 +106,9 @@ Query:
     ?id pgp:location http://e623fd-partygate/no-10 .
   }
 ```
+[See human-readable results from this query](https://web-wrennwfy6q-ew.a.run.app/query.html?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20SELECT%20%3Fparty%20WHERE%20%7B%20%3Fid%20rdfs:label%20%3Fparty%20.%20%3Fid%20pgp:location%20%3Chttp://e623fd-partygate/no-10%3E%20.%20%7D)
 
-[See results](https://web-wrennwfy6q-ew.a.run.app/sparql?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20SELECT%20?party%20WHERE%20{%20?id%20rdfs:label%20?party%20.%20?id%20pgp:location%20%3Chttp://e623fd-partygate/no-10%3E%20.%20})
+[See raw results from this query](https://web-wrennwfy6q-ew.a.run.app/sparql?query=PREFIX%20pgp:%20%3Chttp://e623fd-partygate/p%23%3E%20PREFIX%20pg:%20%3Chttp://e623fd-partygate/%3E%20PREFIX%20rdfs:%20%3Chttp://www.w3.org/2000/01/rdf-schema%23%3E%20SELECT%20%3Fparty%20WHERE%20%7B%20%3Fid%20rdfs:label%20%3Fparty%20.%20%3Fid%20pgp:location%20%3Chttp://e623fd-partygate/no-10%3E%20.%20%7D)
 
 ## Underlying data
 
