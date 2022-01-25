@@ -1,5 +1,5 @@
 
-VERSION=1.4
+VERSION=1.5
 
 all:
 	rapper -i turtle -o ntriples partygate.ttl > partygate.ntriples
@@ -13,6 +13,8 @@ serve:
 lodlive:
 	git clone http://github.com/cybermaggedon/lodlive
 	(cd lodlive; git checkout default-local)
+	cp query.html lodlive/
+	cp lodlive.profile.js lodlive/js/
 
 sparql:
 	-rm -rf sparql-service
@@ -23,7 +25,7 @@ sparql:
 CONTAINER=partygate/web
 CONTAINER2=partygate/sparql
 
-containers: build-base build-web build-sparql
+containers: lodlive sparql serve build-base build-web build-sparql
 	sudo ./build-base docker.io/cybermaggedon/partygate-base
 	sudo ./build-web docker.io/cybermaggedon/partygate-web:${VERSION}
 	sudo ./build-sparql docker.io/cybermaggedon/partygate-sparql:${VERSION}
