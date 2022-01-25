@@ -13,18 +13,22 @@ pg:may-15-wine-cheese
   pg:p\#date "2020-05-15" ;
   pg:p\#report pg:mirror-every-single-party ;
   pg:p\#report pg:guardian-boris-pictured ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#attended-by pg:boris ;
   pg:p\#attended-by pg:carrie-johnson ;
   pg:p\#attended-by pg:matt-hancock ;
   pg:p\#attended-by pg:martin-reynolds ;
   pg:p\#location pg:no-10-garden ;
   pg:p\#weather pg:sunny ;
+  pg:p\#quote "On that day Matt Hancock, then health secretary, had given a 5pm press conference urging people to stick to the rules and not take advantage of the good weather over the May weekend to socialise in groups" ;
+  pg:p\#quote "Insiders claimed about 20 staff drank wine and spirits and ate pizza following a press conference on that day, some in offices inside No 10 and others going into the garden. Some staff stayed drinking until late into the evening, they alleged" ;
   pg:p\#consumed pg:wine ;
   pg:p\#consumed pg:cheese ;
   pg:p\#contravenes pg:garden-gatherings-banned ;
   pg:p\#contravenes pg:meeting-in-parks-2-people ;
   pg:p\#context pg:lockdown-1 ;
   pg:p\#context pg:may-15-421-deaths ;
+  pg:p\#context pg:matt-hancock-briefing ;
   pg:p\#justification pg:people-at-work-talking-about-work ;
   dbpedia:thumbnail <https://i.guim.co.uk/img/media/81492860b5b6ce0c311e25db6b6e2bf2536b992f/0_0_1826_2100/master/1826.jpg?width=620&quality=85&auto=format&fit=max&s=d78255ecfdce782d81ffb1e0b8fd72a9> .
 
@@ -34,6 +38,7 @@ pg:may-20-byob
   pg:p\#date "2020-05-20" ;
   pg:p\#report pg:mirror-every-single-party ;
   pg:p\#report pg:huffington-boris-admits ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#location pg:no-10-garden ;
   pg:p\#invitations-sent pg:martin-reynolds ;
   pg:p\#quote "Make the most of the lovely weather" ;
@@ -49,12 +54,28 @@ pg:may-20-byob
   pg:p\#justification pg:sue-grey-investigating ;
   dbpedia:thumbnail <https://i2-prod.irishmirror.ie/incoming/article25941809.ece/ALTERNATES/s615b/3_Prime-Ministers-Questions-in-parliament-in-London.jpg> .
 
+pg:pm-birthday-party
+  rdf:type pg:party ;
+  rdfs:label "June 19, PM's birthday party" ;
+  pg:p\#date "2020-06-19" ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
+  pg:p\#report pg:itv-boris-had-birthday-bash ;
+  pg:p\#quote "organised by his now wife and attended by up to 30 people" ;
+  pg:p\#quote "a cake presented to the prime minister" ;
+  pg:p\#context pg:pm-wrote-to-josephine ;
+  pg:p\#location pg:no-10 ;
+  pg:p\#attended-by pg:boris ;
+  pg:p\#attended-by pg:carrie-johnson ;
+  pg:p\#consumed pg:cake ;
+  dbpedia:thumbnail <https://i.dailymail.co.uk/1s/2022/01/25/08/53337167-10438405-image-m-33_1643099616094.jpg> .
+
 pg:cummings-quit-flat-party
   rdf:type pg:party ;
   rdfs:label "November 13, Cummings quitting flat party" ;
   pg:p\#date "2020-11-13" ;
   pg:p\#report pg:mirror-every-single-party ;
   pg:p\#report pg:independent-cummings-alleges-flat-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#quote "drank their socks off" ;
   pg:p\#quote "loud music pumping out of the flat" ;
   pg:p\#quote "victory party" ;
@@ -70,6 +91,7 @@ pg:nov-13-lee-cain-leaving-drinks
   rdfs:label "November 13, Lee Cain leaving drinks" ;
   pg:p\#date "2020-11-13" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#quote "a relatively small number of people gathered for drinks" ;
   pg:p\#location pg:no-10-round-table-room ;
   pg:p\#attended-by pg:boris ;
@@ -81,6 +103,7 @@ pg:nov-25-treasury-drinks
   rdfs:label "November 25, Treasury drinks" ;
   pg:p\#date "2020-11-25" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#quote "around two dozen civil servants" ;
   pg:p\#quote "wine and beer brought in" ;
   pg:p\#consumed pg:wine ;
@@ -92,6 +115,7 @@ pg:nov-27-cleo-watson
   rdfs:label "November 27, Cleo Watson leaving drinks" ;
   pg:p\#date "2020-11-27" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#quote "there was no party on Fri 27/11" ;
   pg:p\#quote "red herring" ;
   pg:p\#quote "40 to 50 people crammed into a room in number 10" ;
@@ -109,6 +133,7 @@ pg:dec-10-department-for-education
   rdfs:label "December 10, Department for Education" ;
   pg:p\#date "2020-12-10" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#consumed pg:alcohol ;
   pg:p\#consumed pg:canapes ;
   pg:p\#quote "There were lots of people gathered in the cafe area, mingling and drinking wine" ;
@@ -121,6 +146,7 @@ pg:dec-14-cchq
   rdfs:label "December 14, Raucous party at CCHQ" ;
   pg:p\#date "2020-12-14" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#consumed pg:alcohol ;
   pg:p\#consumed pg:canapes ;
   pg:p\#quote "Some of the group are shown wearing paper hats while one is sporting a House of Commons Christmas jumper" ;
@@ -135,6 +161,7 @@ pg:dec-15-quiz
   rdfs:label "December 15, Boris hosts No. 10 Christmas Quiz" ;
   pg:p\#date "2020-12-15" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#consumed pg:alcohol ;
   pg:p\#quote "Boris Johnson hosted a Christmas quiz virtually but with two staff by his side, and sources said many stuff huddled by computers in No10 to take part while drinking booze from a local Tesco Metro" ;
   pg:p\#contravenes pg:london-tier-2-lockdown ;
@@ -145,11 +172,12 @@ pg:dec-15-quiz
   pg:p\#contravenes pg:london-tier-2-lockdown ;
   pg:p\#location pg:no-10 .
 
-pg:dec-16-grant
+pg:dec-16-grant-shapps
   rdf:type pg:party ;
   rdfs:label "December 16, Grant Shapps' staff Christmas party" ;
   pg:p\#date "2020-12-16" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#consumed pg:alcohol ;
   pg:p\#quote "The same day, the Government imposed Tier 3 curbs on the capital, which saw pubs closed and banned people from different households mixing" ;
   pg:p\#contravenes pg:london-tier-3-lockdown ;
@@ -160,6 +188,7 @@ pg:dec-17-kate-josephs
   rdfs:label "December 17, Kate Josephs leaving drinks" ;
   pg:p\#date "2020-12-17" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#consumed pg:alcohol ;
   pg:p\#contravenes pg:london-tier-3-lockdown ;
   pg:p\#attended-by pg:kate-josephs ;
@@ -167,11 +196,26 @@ pg:dec-17-kate-josephs
   pg:p\#quote "I am truly sorry that I did this and for the anger that people will feel as a result" ;
   dbpedia:thumbnail <https://i2-prod.mirror.co.uk/incoming/article25949747.ece/ALTERNATES/s338a/0_Kate-Josephs_7494.jpg> .
 
+pg:dec-17-simon-case
+  rdf:type pg:party ;
+  rdfs:label "December 2020 (date unknown), Parties investigator had party" ;
+  pg:p\#date "2020-12-17" ;
+  pg:p\#attended-by pg:simon-case ;
+  pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
+  pg:p\#location pg:whitehall ;
+  pg:p\#quote "Cabinet Secretary Simon Case had to recuse himself from probing parties after it emerged his own office held lockdown-busting parties last year" ;
+  pg:p\#quote "Number 10 has insisted the Cabinet Secretary’s inquiry would be 'credible' and 'independent'" ;
+  pg:p\#quote "attended by around 15 people and featured drinking and music" ;
+  pg:p\#quote "reports on the Guido Fawkes blog revealed two parties - one planned, the second an impromptu gathering after work - took place in Mr Case's office at 70 Whitehall" ;
+  pg:p\#consumed pg:alcohol .
+
 pg:dec-18-no10-party
   rdf:type pg:party ;
   rdfs:label "December 18, Party at number 10" ;
   pg:p\#date "2020-12-18" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#contravenes pg:london-tier-3-lockdown ;
   pg:p\#consumed pg:alcohol ;
   pg:p\#quote "According to later reports, people made speeches and stayed until 2am" ;
@@ -185,6 +229,7 @@ pg:dec-top-aide-leaving-do
   rdf:type pg:party ;
   rdfs:label "December 2020 (date unknown), leaving do for top aide" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#consumed pg:alcohol ;
   pg:p\#quote "The Prime Minister gave a speech at an event to mark defence aide Captain Steve Higham’s Downing Street departure before Christmas" ;
   pg:p\#quote "Boris Johnson attended a leaving do for his defence adviser in the run-up to Christmas 2020" ;
@@ -195,24 +240,13 @@ pg:dec-dept-work-pensions
   rdf:type pg:party ;
   rdfs:label "December 2020 (date unknown), Department for Work and Pensions" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#consumed pg:alcohol ;
   pg:p\#consumed pg:takeaway-food ;
   pg:p\#quote "There is a constant flow of booze in the office" ;
   pg:p\#quote "Political staff and officials would frequently drink after work until the early hours, and order takeaway food to Ms Coffey’s DWP office - despite bans on hospitality and office parties" ;
   pg:p\#attended-by pg:therese-coffey ;
   pg:p\#location pg:dwp .
-
-pg:dec-simon-case
-  rdf:type pg:party ;
-  rdfs:label "December 2020 (date unknown), Parties investigator had party" ;
-  pg:p\#report pg:mirror-every-single-party ;
-  pg:p\#location pg:whitehall ;
-  pg:p\#quote "Cabinet Secretary Simon Case had to recuse himself from probing parties after it emerged his own office held lockdown-busting parties last year" ;
-  pg:p\#quote "Number 10 has insisted the Cabinet Secretary’s inquiry would be 'credible' and 'independent'" ;
-  pg:p\#quote "attended by around 15 people and featured drinking and music" ;
-  pg:p\#quote "reports on the Guido Fawkes blog revealed two parties - one planned, the second an impromptu gathering after work - took place in Mr Case's office at 70 Whitehall" ;
-  pg:p\#consumed pg:alcohol ;
-  pg:p\#attended-by pg:simon-case .
 
 pg:suitcase-of-wine
   rdf:type pg:party ;
@@ -221,6 +255,7 @@ pg:suitcase-of-wine
   pg:p\#context pg:eve-of-philips-funeral ;
   pg:p\#report pg:mirror-every-single-party ;
   pg:p\#report pg:herald-james-slack-apologises ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#location pg:no-10 ;
   pg:p\#quote "in the basement, a staffer nicknamed “DJ” was blaring out tunes from a laptop on a photocopier at a boozy party" ;
   pg:p\#quote "One No. 10 staffer was also dispatched to the Co-Op on the Strand, 10 minutes’ walk away, to fill a suitcase with wine" ;
@@ -234,14 +269,34 @@ pg:wine-time-fridays
   rdf:type pg:party ;
   rdfs:label "Throughout: Wine time Fridays" ;
   pg:p\#report pg:mirror-every-single-party ;
+  pg:p\#report pg:guardian-full-list-of-parties ;
   pg:p\#location pg:no-10 ;
   pg:p\#quote "Downing Street staff held 'wine-time Fridays' throughout the pandemic with Boris Johnson regularly witnessing the gatherings" ;
   pg:p\#quote "Sources told the Mirror the Prime Minister encouraged aides to “let off steam” despite indoor socialising being banned under lockdown rules" ;
   pg:p\#quote "event was so popular that staff even invested in a £142 drinks fridge to keep their bottles of white wine, Prosecco and beer cool" ;
   pg:p\#quote "aides took turns on Fridays to visit the local Tesco Metro in Westminster with a wheely suitcase" ;
   pg:p\#consumed pg:alcohol ;
+  pg:p\#consumer pg:prosecco ;
+  pg:p\#consumer pg:white-wine ;
+  pg:p\#consumer pg:beer ;
   dbpedia:thumbnail <https://i2-prod.mirror.co.uk/incoming/article25951862.ece/ALTERNATES/n310p/0_IMG_9294JPG.jpg> ;
   pg:p\#attended-by pg:boris .
+
+pg:home-office-drinks
+  rdf:type pg:party ;
+  rdfs:label "March 24 2021, Home Office staff 'mingled' and drank prosecco" ;
+  pg:p\#date "2021-03-24" ;
+  pg:p\#report pg:big-issue-home-office-drinks ;
+  pg:p\#location pg:home-office ;
+  pg:p\#quote "Home Office staff “mingled” and drank prosecco in their office during lockdown last year" ;
+  pg:p\#quote "The drinks, confirmed by a Home Office spokesperson, were held on March 24 2021" ;
+  pg:p\#quote "There is no suggestion home secretary Priti Patel – who previously said she would call the police if she saw people breaking lockdown rules – was present or aware of the drinks" ;
+  pg:p\#quote "At the time, the country was yet to come out of the January 2021 lockdown, and indoor mixing between households was still banned" ;
+  dbpedia:thumbnail <https://thebigissue581.wpengine.com/wp-content/uploads/2022/01/image-9.png> ;
+  pg:p\#context pg:priti-patel-would-call-police ;
+  pg:p\#contravenes pg:mixing-households-banned ;
+  pg:p\#consumed pg:prosecco ;
+  pg:p\#consumed pg:crisps .
 
 # People
 pg:boris
@@ -331,6 +386,10 @@ pg:no-10-round-table-room
   rdf:type pg:location ;
   rdfs:label "10 Downing Street, round table room" .
 
+pg:home-office
+  rdf:type pg:location ;
+  rdfs:label "Home Office" .
+
 # Weather
 pg:sunny
   rdf:type pg:weather ;
@@ -349,10 +408,24 @@ pg:lockdown-1
   rdf:type pg:context ;
   rdfs:label "Lockdown 1" .
 
+pg:matt-hancock-briefing
+  rdf:type pg:context ;
+  rdfs:label "Matt Hancock press conference, May 15" ;
+  pg:p\#quote "On that day Matt Hancock, then health secretary, had given a 5pm press conference urging people to stick to the rules and not take advantage of the good weather over the May weekend to socialise in groups" ;
+  dc:relation <https://www.gov.uk/government/speeches/health-and-social-care-secretarys-statement-on-coronavirus-covid-19-15-may-2020> .
+
 pg:eve-of-philips-funeral
   rdf:type pg:context ;
   rdfs:label "The eve of Prince Philip's funeral" ;
   dbpedia:thumbnail <https://www.hola.com/us/images/0268-1210245c9a03-72431b486bb7-1000/horizontal-1200/1232358655-collage-u44315206306syh.webp> .
+
+pg:pm-wrote-to-josephine
+  rdf:type pg:context ;
+  rdfs:label "PM wrote to praise Josephine for cancelling her seventh birthday party" ;
+  pg:p\#quote "PM wrote to praise Josephine for cancelling her seventh birthday party just three months before wife and staff serenaded his 56th during Downing Street 'lockdown'" ;
+  pg:p\#quote "the child had ‘set a great example to us all by postponing her birthday party until we have sent coronavirus packing’" ;
+  dbpedia:thumbnail <https://i.dailymail.co.uk/1s/2022/01/25/08/53337873-10438405-Boris_Johnson_s_letter_to_a_girl_who_cancelled_her_seventh_birth-a-32_1643099596756.jpg> ;
+  dc:relation <https://www.dailymail.co.uk/news/article-10438405/Boris-Johnsons-letter-girl-cancelled-seventh-birthday-party-lockdown-resurfaces.html> .
 
 pg:london-tier-2-lockdown
   rdf:type pg:rule ;
@@ -361,6 +434,10 @@ pg:london-tier-2-lockdown
 pg:london-tier-3-lockdown
   rdf:type pg:rule ;
   rdfs:label "London tier 3 lockdown" .
+
+pg:mixing-households-banned
+  rdf:type pg:rule ;
+  rdfs:label "Mixing between households was banned" .
 
 pg:may-15-421-deaths
   rdf:type pg:context ;
@@ -396,6 +473,23 @@ pg:alcohol
   rdfs:label "Alcohol" ;
   dbpedia:thumbnail <https://res.cloudinary.com/dyw8mv3b0/image/upload/c_fill,g_face,q_85,w_710,h_355/v1/news/2021_11/2F5AGXK_zkfuvd.jpg> .
 
+pg:prosecco
+  rdf:type pg:consumable ;
+  rdfs:label "Prosecco" .
+
+pg:white-wine
+  rdf:type pg:consumable ;
+  rdfs:label "White wine" .
+
+pg:beer
+  rdf:type pg:consumable ;
+  rdfs:label "Beer" .
+
+pg:cake
+  rdf:type pg:consumable ;
+  rdfs:label "Cake" ;
+  dbpedia:thumbnail <https://i.dailymail.co.uk/1s/2022/01/25/08/53337167-10438405-image-m-33_1643099616094.jpg> .
+
 pg:canapes
   rdf:type pg:consumable ;
   rdfs:label "Canapes" .
@@ -430,12 +524,25 @@ pg:dc-there-was-no-party
 
 pg:if-we-ease-off-now
   rdf:type pg:context ;
-  rdfs:label "If we ease off now..." .
+  rdfs:label "If we ease off now..." ;
+  pg:p\#quote "If we ease off now, we risk losing control of this virus all over again." ;
+  dc:relation <https://twitter.com/BorisJohnson/status/1332053254356791297> .
+
+pg:priti-patel-would-call-police
+  rdf:type pg:context ;
+  rdfs:label "Home Secretary Priti Patel 'would call the police' if neighbours broke 'rule of six'" ;
+  dbpedia:thumbnail <https://assets-jpcust.jwpsrv.com/thumbnails/athi9kto-720.jpg> ;
+  dc:relation <https://news.sky.com/story/coronavirus-home-secretary-priti-patel-would-call-the-police-if-neighbours-broke-rule-of-six-12072281> .
 
 pg:mirror-every-single-party
   rdf:type pg:report ;
   rdfs:label "Mirror: Every single Downing Street party" ;
   dc:relation <https://www.mirror.co.uk/news/politics/every-single-downing-street-party-25952422> .
+
+pg:itv-boris-had-birthday-bash
+  rdf:type pg:report ;
+  rdfs:label "ITV: Boris Johnson had birthday bash during lockdown" ;
+  dc:relation <https://www.itv.com/news/2022-01-24/boris-johnson-had-birthday-bash-during-lockdown-itv-news-understands> .
 
 pg:huffington-boris-admits
   rdf:type pg:report ;
@@ -457,6 +564,16 @@ pg:herald-james-slack-apologises
   rdfs:label "Herald: James Slack apologises for Downing Street party on eve of Prince Philip's funeral" ;
   dc:relation <https://www.heraldscotland.com/politics/19847387.james-slack-apologises-downing-street-party-eve-prince-philips-funeral/> .
 
+pg:guardian-full-list-of-parties
+  rdf:type pg:report ;
+  rdfs:label "Guardian: A full list of alleged government Covid rule-busting ‘parties’" ;
+  dc:relation <https://www.theguardian.com/politics/2022/jan/24/a-full-list-of-alleged-government-covid-rule-busting-parties> .
+
+pg:big-issue-home-office-drinks
+  rdf:type pg:report ;
+  rdfs:label "Big Issue: Home Office staff ‘mingled and drank prosecco’ during lockdown" ;
+  dc:relation <https://www.bigissue.com/news/politics/exclusive-home-office-staff-mingled-and-drank-prosecco-during-lockdown/> ;
+  dbpedia:thumbnail <https://thebigissue581.wpengine.com/wp-content/uploads/2022/01/image-9.png> .
 
 ### Properties
 

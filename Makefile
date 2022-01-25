@@ -1,5 +1,5 @@
 
-VERSION=1.3
+VERSION=1.4
 
 all:
 	rapper -i turtle -o ntriples partygate.ttl > partygate.ntriples

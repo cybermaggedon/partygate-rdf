@@ -21,6 +21,48 @@
       ]
     }
   ,
+  "http://e623fd-partygate/beer" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/consumable",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Beer",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/big-issue-home-office-drinks" : {
+    "http://dbpedia.org/ontology/thumbnail" : [ {
+        "value" : "https://thebigissue581.wpengine.com/wp-content/uploads/2022/01/image-9.png",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://purl.org/dc/elements/1.1/relation" : [ {
+        "value" : "https://www.bigissue.com/news/politics/exclusive-home-office-staff-mingled-and-drank-prosecco-during-lockdown/",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/report",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Big Issue: Home Office staff \u2018mingled and drank prosecco\u2019 during lockdown",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
   "http://e623fd-partygate/boris" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://e623fd-partygate/person",
@@ -30,6 +72,27 @@
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Boris Johnson",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/cake" : {
+    "http://dbpedia.org/ontology/thumbnail" : [ {
+        "value" : "https://i.dailymail.co.uk/1s/2022/01/25/08/53337167-10438405-image-m-33_1643099616094.jpg",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/consumable",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Cake",
         "type" : "literal"
         }
       
@@ -215,6 +278,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/independent-cummings-alleges-flat-party",
         "type" : "uri"
         }
@@ -295,6 +363,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -368,6 +441,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -441,6 +519,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -460,7 +543,7 @@
       ]
     }
   ,
-  "http://e623fd-partygate/dec-16-grant" : {
+  "http://e623fd-partygate/dec-16-grant-shapps" : {
     "http://e623fd-partygate/p#consumed" : [ {
         "value" : "http://e623fd-partygate/alcohol",
         "type" : "uri"
@@ -492,6 +575,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -554,6 +642,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -567,6 +660,77 @@
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "December 17, Kate Josephs leaving drinks",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/dec-17-simon-case" : {
+    "http://e623fd-partygate/p#attended-by" : [ {
+        "value" : "http://e623fd-partygate/simon-case",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#consumed" : [ {
+        "value" : "http://e623fd-partygate/alcohol",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#date" : [ {
+        "value" : "2020-12-17",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#location" : [ {
+        "value" : "http://e623fd-partygate/whitehall",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#quote" : [ {
+        "value" : "Cabinet Secretary Simon Case had to recuse himself from probing parties after it emerged his own office held lockdown-busting parties last year",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Number 10 has insisted the Cabinet Secretary\u2019s inquiry would be 'credible' and 'independent'",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "attended by around 15 people and featured drinking and music",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "reports on the Guido Fawkes blog revealed two parties - one planned, the second an impromptu gathering after work - took place in Mr Case's office at 70 Whitehall",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://e623fd-partygate/mirror-every-single-party",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/party",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "December 2020 (date unknown), Parties investigator had party",
         "type" : "literal"
         }
       
@@ -625,6 +789,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -680,6 +849,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -693,66 +867,6 @@
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "December 2020 (date unknown), Department for Work and Pensions",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://e623fd-partygate/dec-simon-case" : {
-    "http://e623fd-partygate/p#attended-by" : [ {
-        "value" : "http://e623fd-partygate/simon-case",
-        "type" : "uri"
-        }
-      
-      ],
-    "http://e623fd-partygate/p#consumed" : [ {
-        "value" : "http://e623fd-partygate/alcohol",
-        "type" : "uri"
-        }
-      
-      ],
-    "http://e623fd-partygate/p#location" : [ {
-        "value" : "http://e623fd-partygate/whitehall",
-        "type" : "uri"
-        }
-      
-      ],
-    "http://e623fd-partygate/p#quote" : [ {
-        "value" : "Cabinet Secretary Simon Case had to recuse himself from probing parties after it emerged his own office held lockdown-busting parties last year",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Number 10 has insisted the Cabinet Secretary\u2019s inquiry would be 'credible' and 'independent'",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "attended by around 15 people and featured drinking and music",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "reports on the Guido Fawkes blog revealed two parties - one planned, the second an impromptu gathering after work - took place in Mr Case's office at 70 Whitehall",
-        "type" : "literal"
-        }
-      
-      ],
-    "http://e623fd-partygate/p#report" : [ {
-        "value" : "http://e623fd-partygate/mirror-every-single-party",
-        "type" : "uri"
-        }
-      
-      ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://e623fd-partygate/party",
-        "type" : "uri"
-        }
-      
-      ],
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-        "value" : "December 2020 (date unknown), Parties investigator had party",
         "type" : "literal"
         }
       
@@ -789,6 +903,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -880,6 +999,27 @@
       ]
     }
   ,
+  "http://e623fd-partygate/guardian-full-list-of-parties" : {
+    "http://purl.org/dc/elements/1.1/relation" : [ {
+        "value" : "https://www.theguardian.com/politics/2022/jan/24/a-full-list-of-alleged-government-covid-rule-busting-parties",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/report",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Guardian: A full list of alleged government Covid rule-busting \u2018parties\u2019",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
   "http://e623fd-partygate/herald-james-slack-apologises" : {
     "http://purl.org/dc/elements/1.1/relation" : [ {
         "value" : "https://www.heraldscotland.com/politics/19847387.james-slack-apologises-downing-street-party-eve-prince-philips-funeral/",
@@ -895,6 +1035,104 @@
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Herald: James Slack apologises for Downing Street party on eve of Prince Philip's funeral",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/home-office" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/location",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Home Office",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/home-office-drinks" : {
+    "http://dbpedia.org/ontology/thumbnail" : [ {
+        "value" : "https://thebigissue581.wpengine.com/wp-content/uploads/2022/01/image-9.png",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#consumed" : [ {
+        "value" : "http://e623fd-partygate/crisps",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://e623fd-partygate/prosecco",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#context" : [ {
+        "value" : "http://e623fd-partygate/priti-patel-would-call-police",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#contravenes" : [ {
+        "value" : "http://e623fd-partygate/mixing-households-banned",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#date" : [ {
+        "value" : "2021-03-24",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#location" : [ {
+        "value" : "http://e623fd-partygate/home-office",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#quote" : [ {
+        "value" : "At the time, the country was yet to come out of the January 2021 lockdown, and indoor mixing between households was still banned",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Home Office staff \u201Cmingled\u201D and drank prosecco in their office during lockdown last year",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "The drinks, confirmed by a Home Office spokesperson, were held on March 24 2021",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "There is no suggestion home secretary Priti Patel \u2013 who previously said she would call the police if she saw people breaking lockdown rules \u2013 was present or aware of the drinks",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/big-issue-home-office-drinks",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/party",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "March 24 2021, Home Office staff 'mingled' and drank prosecco",
         "type" : "literal"
         }
       
@@ -923,6 +1161,18 @@
     }
   ,
   "http://e623fd-partygate/if-we-ease-off-now" : {
+    "http://e623fd-partygate/p#quote" : [ {
+        "value" : "If we ease off now, we risk losing control of this virus all over again.",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://purl.org/dc/elements/1.1/relation" : [ {
+        "value" : "https://twitter.com/BorisJohnson/status/1332053254356791297",
+        "type" : "uri"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://e623fd-partygate/context",
         "type" : "uri"
@@ -952,6 +1202,27 @@
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Independent: Dominic Cummings alleges lockdown party also held in Boris Johnson\u2019s Downing Street flat",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/itv-boris-had-birthday-bash" : {
+    "http://purl.org/dc/elements/1.1/relation" : [ {
+        "value" : "https://www.itv.com/news/2022-01-24/boris-johnson-had-birthday-bash-during-lockdown-itv-news-understands",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/report",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "ITV: Boris Johnson had birthday bash during lockdown",
         "type" : "literal"
         }
       
@@ -1108,6 +1379,33 @@
       ]
     }
   ,
+  "http://e623fd-partygate/matt-hancock-briefing" : {
+    "http://e623fd-partygate/p#quote" : [ {
+        "value" : "On that day Matt Hancock, then health secretary, had given a 5pm press conference urging people to stick to the rules and not take advantage of the good weather over the May weekend to socialise in groups",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://purl.org/dc/elements/1.1/relation" : [ {
+        "value" : "https://www.gov.uk/government/speeches/health-and-social-care-secretarys-statement-on-coronavirus-covid-19-15-may-2020",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/context",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Matt Hancock press conference, May 15",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
   "http://e623fd-partygate/may-15-421-deaths" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://e623fd-partygate/context",
@@ -1168,6 +1466,11 @@
         }
       ,
       {
+        "value" : "http://e623fd-partygate/matt-hancock-briefing",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/may-15-421-deaths",
         "type" : "uri"
         }
@@ -1202,8 +1505,24 @@
         }
       
       ],
+    "http://e623fd-partygate/p#quote" : [ {
+        "value" : "Insiders claimed about 20 staff drank wine and spirits and ate pizza following a press conference on that day, some in offices inside No 10 and others going into the garden. Some staff stayed drinking until late into the evening, they alleged",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "On that day Matt Hancock, then health secretary, had given a 5pm press conference urging people to stick to the rules and not take advantage of the good weather over the May weekend to socialise in groups",
+        "type" : "literal"
+        }
+      
+      ],
     "http://e623fd-partygate/p#report" : [ {
         "value" : "http://e623fd-partygate/guardian-boris-pictured",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
         "type" : "uri"
         }
       ,
@@ -1313,6 +1632,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/huffington-boris-admits",
         "type" : "uri"
         }
@@ -1373,6 +1697,21 @@
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Mirror: Every single Downing Street party",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/mixing-households-banned" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/rule",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Mixing between households was banned",
         "type" : "literal"
         }
       
@@ -1491,6 +1830,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -1546,6 +1890,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -1634,6 +1983,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
@@ -1893,6 +2247,164 @@
       ]
     }
   ,
+  "http://e623fd-partygate/pm-birthday-party" : {
+    "http://dbpedia.org/ontology/thumbnail" : [ {
+        "value" : "https://i.dailymail.co.uk/1s/2022/01/25/08/53337167-10438405-image-m-33_1643099616094.jpg",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#attended-by" : [ {
+        "value" : "http://e623fd-partygate/boris",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://e623fd-partygate/carrie-johnson",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#consumed" : [ {
+        "value" : "http://e623fd-partygate/cake",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#context" : [ {
+        "value" : "http://e623fd-partygate/pm-wrote-to-josephine",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#date" : [ {
+        "value" : "2020-06-19",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#location" : [ {
+        "value" : "http://e623fd-partygate/no-10",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#quote" : [ {
+        "value" : "a cake presented to the prime minister",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "organised by his now wife and attended by up to 30 people",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://e623fd-partygate/itv-boris-had-birthday-bash",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/party",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "June 19, PM's birthday party",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/pm-wrote-to-josephine" : {
+    "http://dbpedia.org/ontology/thumbnail" : [ {
+        "value" : "https://i.dailymail.co.uk/1s/2022/01/25/08/53337873-10438405-Boris_Johnson_s_letter_to_a_girl_who_cancelled_her_seventh_birth-a-32_1643099596756.jpg",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://e623fd-partygate/p#quote" : [ {
+        "value" : "PM wrote to praise Josephine for cancelling her seventh birthday party just three months before wife and staff serenaded his 56th during Downing Street 'lockdown'",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "the child had \u2018set a great example to us all by postponing her birthday party until we have sent coronavirus packing\u2019",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://purl.org/dc/elements/1.1/relation" : [ {
+        "value" : "https://www.dailymail.co.uk/news/article-10438405/Boris-Johnsons-letter-girl-cancelled-seventh-birthday-party-lockdown-resurfaces.html",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/context",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "PM wrote to praise Josephine for cancelling her seventh birthday party",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/priti-patel-would-call-police" : {
+    "http://dbpedia.org/ontology/thumbnail" : [ {
+        "value" : "https://assets-jpcust.jwpsrv.com/thumbnails/athi9kto-720.jpg",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://purl.org/dc/elements/1.1/relation" : [ {
+        "value" : "https://news.sky.com/story/coronavirus-home-secretary-priti-patel-would-call-the-police-if-neighbours-broke-rule-of-six-12072281",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/context",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Home Secretary Priti Patel 'would call the police' if neighbours broke 'rule of six'",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://e623fd-partygate/prosecco" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/consumable",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Prosecco",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
   "http://e623fd-partygate/report" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
@@ -2062,6 +2574,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/herald-james-slack-apologises",
         "type" : "uri"
         }
@@ -2206,6 +2723,21 @@
       ]
     }
   ,
+  "http://e623fd-partygate/white-wine" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://e623fd-partygate/consumable",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "White wine",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
   "http://e623fd-partygate/whitehall" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://e623fd-partygate/location",
@@ -2255,6 +2787,22 @@
         }
       
       ],
+    "http://e623fd-partygate/p#consumer" : [ {
+        "value" : "http://e623fd-partygate/beer",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://e623fd-partygate/prosecco",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://e623fd-partygate/white-wine",
+        "type" : "uri"
+        }
+      
+      ],
     "http://e623fd-partygate/p#location" : [ {
         "value" : "http://e623fd-partygate/no-10",
         "type" : "uri"
@@ -2283,6 +2831,11 @@
       
       ],
     "http://e623fd-partygate/p#report" : [ {
+        "value" : "http://e623fd-partygate/guardian-full-list-of-parties",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "http://e623fd-partygate/mirror-every-single-party",
         "type" : "uri"
         }
