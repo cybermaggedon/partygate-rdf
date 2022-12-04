@@ -1248,11 +1248,11 @@
   <rdf:Description rdf:about="http://e623fd-partygate/p#invitations-sent">
     <rdfs:label>invitations sent</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://e623fd-partygate/p#quotes">
+  <rdf:Description rdf:about="http://e623fd-partygate/p#quote">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://e623fd-partygate/p#quotes">
-    <rdfs:label>quotes</rdfs:label>
+  <rdf:Description rdf:about="http://e623fd-partygate/p#quote">
+    <rdfs:label>quote</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://e623fd-partygate/p#consumed">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>

@@ -414,8 +414,8 @@
 <http://e623fd-partygate/p#justification> <http://www.w3.org/2000/01/rdf-schema#label> "justification" .
 <http://e623fd-partygate/p#invitations-sent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://e623fd-partygate/p#invitations-sent> <http://www.w3.org/2000/01/rdf-schema#label> "invitations sent" .
-<http://e623fd-partygate/p#quotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://e623fd-partygate/p#quotes> <http://www.w3.org/2000/01/rdf-schema#label> "quotes" .
+<http://e623fd-partygate/p#quote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://e623fd-partygate/p#quote> <http://www.w3.org/2000/01/rdf-schema#label> "quote" .
 <http://e623fd-partygate/p#consumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://e623fd-partygate/p#consumed> <http://www.w3.org/2000/01/rdf-schema#label> "consumed" .
 <http://e623fd-partygate/p#report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .

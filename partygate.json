@@ -2157,7 +2157,7 @@
       ]
     }
   ,
-  "http://e623fd-partygate/p#quotes" : {
+  "http://e623fd-partygate/p#quote" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -2165,7 +2165,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-        "value" : "quotes",
+        "value" : "quote",
         "type" : "literal"
         }
       

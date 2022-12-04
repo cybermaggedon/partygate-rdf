@@ -609,9 +609,9 @@ pg:p\#invitations-sent
   rdf:type rdfs:Property ;
   rdfs:label "invitations sent" .
 
-pg:p\#quotes
+pg:p\#quote
   rdf:type rdfs:Property ;
-  rdfs:label "quotes" .
+  rdfs:label "quote" .
 
 pg:p\#consumed
   rdf:type rdfs:Property ;

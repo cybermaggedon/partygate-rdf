@@ -49,10 +49,15 @@
 	      div.removeChild(div.firstChild);
 	  }
 
+	  var resp = this.responseXML;
+
+	  if (resp == null) {
+	      div.appendChild(document.createTextNode(this.responseText));
+	      return;
+	  }
+
 	  var elt = document.createElement("table");
 	  div.appendChild(elt);
-
-	  var resp = this.responseXML;
 
 	  var tr = document.createElement("tr");
 	  elt.appendChild(tr);
@@ -114,6 +119,7 @@
       }
 
       var sow = "SELECT ?label ?value\nWHERE {\n  <http://e623fd-partygate/suitcase-of-wine> ?prop ?value .\n  ?prop <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n}";
+//      var sow = "SELECT ?label ?value\nWHERE {\n  {\n    <http://e623fd-partygate/suitcase-of-wine> ?prop ?value .\n    FILTER (!isURI(?value))\n    ?prop <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n  } UNION {\n    <http://e623fd-partygate/suitcase-of-wine> ?prop ?obj .\n    FILTER (isURI(?obj)) .\n    ?prop <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n    ?obj <http://www.w3.org/2000/01/rdf-schema#label> ?value .\n  }\n}";
       var b1 = "PREFIX pgp: <http://e623fd-partygate/p#>\nPREFIX pg: <http://e623fd-partygate/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?party\nWHERE {\n  ?id rdfs:label ?party .\n  ?id pgp:attended-by pg:boris .\n}\n";
       var b2 = "PREFIX pgp: <http://e623fd-partygate/p#>\nPREFIX pg: <http://e623fd-partygate/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?party ?breaks\n WHERE {\n  ?a rdfs:label ?party .\n  ?a pgp:contravenes ?d .\n  ?d rdfs:label ?breaks .\n  ?a pgp:attended-by pg:boris .\n}\n";
       
