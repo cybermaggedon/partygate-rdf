@@ -66,6 +66,9 @@ jobs:
           access_token_lifetime: 600s
           create_credentials_file: true
 
+      - name: Install Pulumi
+        run: cd pulumi && npm install
+
       - name: Applying infrastructure 🚀
         uses: pulumi/actions@v3
         with:
