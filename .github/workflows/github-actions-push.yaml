@@ -50,6 +50,7 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
+            type=sha
 
       - name: Extract metadata for sparql container
         id: meta-sparql
@@ -61,6 +62,7 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
+            type=sha
 
       - name: Get web revision
         id: web-version
@@ -108,7 +110,7 @@ jobs:
       - name: Install Pulumi
         run: cd pulumi && npm install
 
-      - name: Applying infrastructure 🚀
+      - name: Applying infrastructure 🚀🙏
         uses: pulumi/actions@v3
         with:
           command: up
