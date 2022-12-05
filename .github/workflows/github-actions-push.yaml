@@ -117,5 +117,5 @@ jobs:
           cloud-url: gs://partygate-deploy/prod
         env:
           PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}
-	  WEB_IMAGE_VERSION: ${{ steps.web-version.outputs.VERSION }}
-	  SPARQL_IMAGE_VERSION: ${{ steps.sparql-version.outputs.VERSION }}
+          WEB_IMAGE_VERSION: ${{ steps.web-version.outputs.VERSION }}
+          SPARQL_IMAGE_VERSION: ${{ steps.sparql-version.outputs.VERSION }}
