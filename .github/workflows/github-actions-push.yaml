@@ -71,7 +71,7 @@ jobs:
         with:
           command: up
           stack-name: prod
-	  work-dir: pulumi
+          work-dir: pulumi
           cloud-url: gs://partygate-deploy
 
       - name: Login to Artifact Registry
