@@ -1,0 +1,12 @@
+
+FROM fedora:36
+
+RUN dnf update -y && dnf install -y libgo && dnf clean all
+
+COPY serve /usr/local/bin/serve
+ADD lodlive /usr/local/web/
+
+WORKDIR /usr/local/web/
+CMD /usr/local/bin/serve
+EXPOSE 8080
+

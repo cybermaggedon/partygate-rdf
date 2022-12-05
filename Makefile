@@ -16,23 +16,17 @@ lodlive:
 	cp query.html lodlive/
 	cp lodlive.profile.js lodlive/js/
 
-sparql:
-	-rm -rf sparql-service
-	git clone http://github.com/cybermaggedon/sparql-service
-	(cd sparql-service; make)
-	cp sparql-service/sparql sparql
-
 CONTAINER=partygate/web
 CONTAINER2=partygate/sparql
 
-containers: lodlive sparql serve build-base build-web build-sparql
-	sudo ./build-base docker.io/cybermaggedon/partygate-base
-	sudo ./build-web docker.io/cybermaggedon/partygate-web:${VERSION}
-	sudo ./build-sparql docker.io/cybermaggedon/partygate-sparql:${VERSION}
-	sudo buildah tag docker.io/cybermaggedon/partygate-web:${VERSION} \
-		docker.io/cybermaggedon/partygate-web:latest
-	sudo buildah tag docker.io/cybermaggedon/partygate-sparql:${VERSION} \
-		docker.io/cybermaggedon/partygate-sparql:latest
+WEB_CONTAINER=docker.io/cybermaggedon/partygate-web:${VERSION}
+SPARQL_CONTAINER=docker.io/cybermaggedon/partygate-sparql:${VERSION}
+
+containers: lodlive serve Dockerfile.web Dockerfile.sparql
+	docker build -t partygate-web -f Dockerfile.web .
+	docker tag partygate-web ${WEB_CONTAINER}
+	docker build -t partygate-sparql -f Dockerfile.web .
+	docker tag partygate-sparql ${SPARQL_CONTAINER}
 
 push:
 	sudo buildah push docker.io/cybermaggedon/partygate-web:${VERSION}

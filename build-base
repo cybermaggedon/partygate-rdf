@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-set -x
-
-basectrl=$(buildah from fedora:34)
-buildah run "$basectrl" -- dnf update -y
-buildah commit "$basectrl" $1
-
