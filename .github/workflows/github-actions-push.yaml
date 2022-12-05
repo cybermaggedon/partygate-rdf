@@ -71,7 +71,7 @@ jobs:
         with:
           command: up
           stack-name: prod
-          cloud-url: gs://partygate-deploy/partygate-deploy
+          cloud-url: gs://partygate-deploy
 
       - name: Login to Artifact Registry
         uses: docker/login-action@v1
