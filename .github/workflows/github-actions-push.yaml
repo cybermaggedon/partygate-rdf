@@ -1,5 +1,5 @@
 
-name: Publish SPARQL docker image
+name: Publish docker images
 
 on:
   workflow_dispatch:
@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: make lodlive serve
 
-      - name: Extract metadata (tags, labels) for Docker
+      - name: Extract metadata for web container
         id: meta-web
         uses: docker/metadata-action@v4
         with:
@@ -43,7 +43,7 @@ jobs:
             type=ref,event=branch
             type=semver,pattern={{version}}
 
-      - name: Extract metadata (tags, labels) for Docker
+      - name: Extract metadata for sparql container
         id: meta-sparql
         uses: docker/metadata-action@v4
         with:
@@ -68,20 +68,20 @@ jobs:
           username: oauth2accesstoken
           password: ${{ steps.auth.outputs.access_token }}
 
-      - name: Build and push
+      - name: Build and push web
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: false
+          push: true
           tags: ${{ steps.meta-web.outputs.tags }}
           labels: ${{ steps.meta-web.outputs.labels }}
           file: Dockerfile.web
 
-      - name: Build and push
+      - name: Build and push sparql
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: false
+          push: true
           tags: ${{ steps.meta-sparql.outputs.tags }}
           labels: ${{ steps.meta-sparql.outputs.labels }}
           file: Dockerfile.sparql
