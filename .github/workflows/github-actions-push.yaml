@@ -27,13 +27,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Get version
-        id: version
-        run: echo VERSION=$(git rev-parse --short HEAD) >> $GITHUB_OUTPUT
+#       - name: Get version
+#         id: version
+#         run: echo VERSION=$(git rev-parse --short HEAD) >> $GITHUB_OUTPUT
 
-      - run: echo ${{ steps.version.outputs.VERSION }}
-
-      - run: exit 1
+#       - run: echo ${{ steps.version.outputs.VERSION }}
 
       - name: Install packages
         run: sudo apt update &&
@@ -65,10 +63,12 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
 
       - name: Get web revision
-        run: echo "WEB_IMAGE_REVISION=${{ fromJSON(steps.meta-web.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_ENV
+        id: web-version
+        run: echo "VERSION=${{ fromJSON(steps.meta-web.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_OUTPUT
 
       - name: Get sparql revision
-        run: echo "SPARQL_IMAGE_REVISION=${{ fromJSON(steps.meta-sparql.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_ENV
+        id: sparql-version
+        run: echo "VERSION=${{ fromJSON(steps.meta-sparql.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_OUTPUT
 
       - id: auth
         name: Authenticate with Google Cloud
@@ -117,3 +117,5 @@ jobs:
           cloud-url: gs://partygate-deploy/prod
         env:
           PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}
+	  WEB_IMAGE_VERSION: ${{ steps.web-version.outputs.VERSION }}
+	  SPARQL_IMAGE_VERSION: ${{ steps.sparql-version.outputs.VERSION }}
