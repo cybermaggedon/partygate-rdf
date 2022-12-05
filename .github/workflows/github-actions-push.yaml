@@ -63,7 +63,15 @@ jobs:
           token_format: access_token
           workload_identity_provider: projects/189299608781/locations/global/workloadIdentityPools/deploy/providers/github-deploy
           service_account: deploy@partygate.iam.gserviceaccount.com
-          access_token_lifetime: 300s
+          access_token_lifetime: 600s
+          create_credentials_file: true
+
+      - name: Applying infrastructure 🚀
+        uses: pulumi/actions@v3
+        with:
+          command: up
+          stack-name: prod
+          cloud-url: gs://partygate-deploy/partygate-deploy
 
       - name: Login to Artifact Registry
         uses: docker/login-action@v1
@@ -89,4 +97,3 @@ jobs:
           tags: ${{ steps.meta-sparql.outputs.tags }}
           labels: ${{ steps.meta-sparql.outputs.labels }}
           file: Dockerfile.sparql
-
