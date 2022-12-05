@@ -41,7 +41,9 @@ jobs:
           images: europe-west1-docker.pkg.dev/partygate/partygate/web
           tags: |
             type=ref,event=branch
+            type=ref,event=pr
             type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
 
       - name: Extract metadata for sparql container
         id: meta-sparql
@@ -50,7 +52,9 @@ jobs:
           images: europe-west1-docker.pkg.dev/partygate/partygate/sparql
           tags: |
             type=ref,event=branch
+            type=ref,event=pr
             type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
 
       - id: auth
         name: Authenticate with Google Cloud
