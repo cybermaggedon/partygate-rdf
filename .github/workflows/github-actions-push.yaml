@@ -13,11 +13,13 @@ on:
 
 permissions:
   contents: read
+  id-token: 'write'
 
 jobs:
 
-  compile:
-    name: Build
+  container-push:
+
+    name: Container push
     runs-on: ubuntu-latest
 
     steps:
