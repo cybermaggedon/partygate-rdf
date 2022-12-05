@@ -31,8 +31,6 @@ jobs:
         id: version
         run: echo VERSION=sha-$(git rev-parse --short HEAD) >> $GITHUB_OUTPUT
 
-      - run: echo ${{ steps.version.outputs.VERSION }}
-
       - name: Install packages
         run: sudo apt update &&
           sudo apt install golang-go
