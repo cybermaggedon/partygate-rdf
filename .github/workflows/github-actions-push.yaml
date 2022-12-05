@@ -62,9 +62,6 @@ jobs:
       - name: Get sparql revision
         run: echo "SPARQL_IMAGE_REVISION=${{ fromJSON(steps.meta-sparql.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_ENV
 
-      - run: echo ${{ env.WEB_IMAGE_REVISION }}
-      - run: echo ${{ env.SPARQL_IMAGE_REVISION }}
-
       - id: auth
         name: Authenticate with Google Cloud
         uses: google-github-actions/auth@v0

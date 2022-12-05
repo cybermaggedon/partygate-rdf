@@ -2,7 +2,14 @@
 import * as pulumi from "@pulumi/pulumi";
 import * as gcp from "@pulumi/gcp";
 
-const version = "1.6.1";
+const webVersion = process.env.WEB_IMAGE_VERSION;
+const sparqlVersion = process.env.SPARQL_IMAGE_VERSION;
+
+if (!webVersion)
+    throw Error("WEB_IMAGE_VERSION not defined");
+
+if (!sparqlVersion)
+    throw Error("SPARQL_IMAGE_VERSION not defined");
 
 const provider = new gcp.Provider(
     "gcp",
@@ -44,10 +51,7 @@ const enableCloudDns = new gcp.projects.Service(
 
 const repo = "europe-west1-docker.pkg.dev/partygate/partygate";
 
-const webVersion = version;
 const webImage = repo + "/web:" + webVersion;
-
-const sparqlVersion = version;
 const sparqlImage = repo + "/sparql:" + sparqlVersion;
 
 const sparqlService = new gcp.cloudrun.Service(
