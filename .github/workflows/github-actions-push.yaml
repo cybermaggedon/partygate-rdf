@@ -72,7 +72,9 @@ jobs:
           command: up
           stack-name: prod
           work-dir: pulumi
-          cloud-url: gs://partygate-deploy
+          cloud-url: gs://partygate-deploy/prod
+	env:
+	  PULUMI_CONFIG_PASSPHRASE: {{secrets.PULUMI_CONFIG_PASSPHRASE}}
 
       - name: Login to Artifact Registry
         uses: docker/login-action@v1
