@@ -44,6 +44,7 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
+	    type=sha
 
       - name: Extract metadata for sparql container
         id: meta-sparql
