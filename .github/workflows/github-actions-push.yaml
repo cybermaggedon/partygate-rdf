@@ -64,15 +64,6 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=sha
 
-      - name: Get web revision
-        id: web-version
-        run: echo "VERSION=${{ fromJSON(steps.meta-web.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_OUTPUT
-
-      - name: Get sparql revision
-        id: sparql-version
-        run: echo "VERSION=${{ fromJSON(steps.meta-sparql.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_OUTPUT
-
-      - run: bucnhes
       - id: auth
         name: Authenticate with Google Cloud
         uses: google-github-actions/auth@v0
@@ -120,5 +111,5 @@ jobs:
           cloud-url: gs://partygate-deploy/prod
         env:
           PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}
-          WEB_IMAGE_VERSION: ${{ steps.web-version.outputs.VERSION }}
-          SPARQL_IMAGE_VERSION: ${{ steps.sparql-version.outputs.VERSION }}
+          WEB_IMAGE_VERSION: ${{ steps.version.outputs.VERSION }}
+          SPARQL_IMAGE_VERSION: ${{ steps.version.outputs.VERSION }}
