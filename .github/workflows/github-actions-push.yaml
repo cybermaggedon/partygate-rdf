@@ -55,7 +55,7 @@ jobs:
         uses: google-github-actions/auth@v0
         with:
           token_format: access_token
-          workload_identity_provider:projects/189299608781/locations/global/workloadIdentityPools/deploy/providers/github-deploy
+          workload_identity_provider: projects/189299608781/locations/global/workloadIdentityPools/deploy/providers/github-deploy
           service_account: deploy@partygate.iam.gserviceaccount.com
           access_token_lifetime: 300s
 
