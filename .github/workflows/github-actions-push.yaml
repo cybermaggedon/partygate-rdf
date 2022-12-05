@@ -44,7 +44,6 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-	    type=sha
 
       - name: Extract metadata for sparql container
         id: meta-sparql
@@ -56,7 +55,15 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-	    type=sha
+
+      - name: Get web revision
+        run: echo "WEB_IMAGE_REVISION=${{ fromJSON(steps.meta-web.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_ENV
+
+      - name: Get sparql revision
+        run: echo "SPARQL_IMAGE_REVISION=${{ fromJSON(steps.meta-sparql.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_ENV
+
+      - run: echo ${{ env.WEB_IMAGE_REVISION }}
+      - run: echo ${{ env.SPARQL_IMAGE_REVISION }}
 
       - id: auth
         name: Authenticate with Google Cloud
