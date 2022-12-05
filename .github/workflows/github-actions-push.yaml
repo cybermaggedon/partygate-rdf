@@ -27,11 +27,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-#       - name: Get version
-#         id: version
-#         run: echo VERSION=$(git rev-parse --short HEAD) >> $GITHUB_OUTPUT
+      - name: Get version
+        id: version
+        run: echo VERSION=sha-$(git rev-parse --short HEAD) >> $GITHUB_OUTPUT
 
-#       - run: echo ${{ steps.version.outputs.VERSION }}
+      - run: echo ${{ steps.version.outputs.VERSION }}
 
       - name: Install packages
         run: sudo apt update &&
@@ -50,7 +50,7 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-            type=sha,format=long
+            type=sha
 
       - name: Extract metadata for sparql container
         id: meta-sparql
@@ -62,7 +62,7 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-            type=sha,format=long
+            type=sha
 
       - name: Get web revision
         id: web-version
@@ -72,6 +72,7 @@ jobs:
         id: sparql-version
         run: echo "VERSION=${{ fromJSON(steps.meta-sparql.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_OUTPUT
 
+      - run: bucnhes
       - id: auth
         name: Authenticate with Google Cloud
         uses: google-github-actions/auth@v0
