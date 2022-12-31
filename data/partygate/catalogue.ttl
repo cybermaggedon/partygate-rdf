@@ -6,10 +6,10 @@
 @prefix dataset: <http://pivotlabs.vc/innov/dataset/> .
 @prefix schema: <https://schema.org/> .
 
-dataset:ukraine
+dataset:partygate
   a schema:Dataset ;
-  rdfs:label "Ukraine news, early 2022" ;
-  schema:headline "Ukraine news, early 2022" ;
-  schema:keywords "ukraine"@en, "russia"@en, "news"@en, "military"@en,
-    "combat"@en;
-  schema:description "Various news articles about the invasion of Ukraine, 2022"  .
+  rdfs:label "Partygate RDF" ;
+  schema:headline "Partygate RDF" ;
+  schema:keywords "partygate"@en, "boris"@en, "bojo"@en, "lockdown"@en,
+    "covid"@en;
+  schema:description "Various news articles about Partygate"  .
