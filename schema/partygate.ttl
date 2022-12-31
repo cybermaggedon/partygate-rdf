@@ -1,0 +1,98 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://e623fd-ukraine/> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dataset: <http://pivotlabs.vc/innov/dataset/> .
+@prefix schema: <https://schema.org/> .
+@prefix pg: <http://e623fd-partygate/> .
+
+
+### Properties
+
+pg:p\#date
+  rdf:type rdfs:Property ;
+  rdfs:label "date" .
+
+pg:p\#attended-by
+  rdf:type rdfs:Property ;
+  rdfs:label "attended by" .
+
+pg:p\#location
+  rdf:type rdfs:Property ;
+  rdfs:label "location" .
+
+pg:p\#weather
+  rdf:type rdfs:Property ;
+  rdfs:label "weather" .
+
+pg:p\#contravenes
+  rdf:type rdfs:Property ;
+  rdfs:label "contravenes" .
+
+pg:p\#context
+  rdf:type rdfs:Property ;
+  rdfs:label "context" .
+
+pg:p\#justification
+  rdf:type rdfs:Property ;
+  rdfs:label "justification" .
+
+pg:p\#invitations-sent
+  rdf:type rdfs:Property ;
+  rdfs:label "invitations sent" .
+
+pg:p\#quote
+  rdf:type rdfs:Property ;
+  rdfs:label "quote" .
+
+pg:p\#consumed
+  rdf:type rdfs:Property ;
+  rdfs:label "consumed" .
+
+pg:p\#report
+  rdf:type rdfs:Property ;
+  rdfs:label "report" .
+
+### Types
+
+pg:party
+  rdf:type rdfs:Class ;
+  rdfs:label "Party" .
+
+pg:weather
+  rdf:type rdfs:Class ;
+  rdfs:label "Weather" .
+
+pg:person
+  rdf:type rdfs:Class ;
+  rdfs:label "Person" .
+
+pg:location
+  rdf:type rdfs:Class ;
+  rdfs:label "Location" .
+
+pg:rule
+  rdf:type rdfs:Class ;
+  rdfs:label "Rule" .
+
+pg:context
+  rdf:type rdfs:Class ;
+  rdfs:label "Context" .
+
+pg:justification
+  rdf:type rdfs:Class ;
+  rdfs:label "Justification" .
+
+pg:consumable
+  rdf:type rdfs:Class ;
+  rdfs:label "Consumable" .
+
+pg:report
+  rdf:type rdfs:Class ;
+  rdfs:label "Report" .
+
+
+dbpedia:thumbnail a rdfs:Property ;
+  rdfs:label "thumbnail" .
+

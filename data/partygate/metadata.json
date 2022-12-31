@@ -1,0 +1,7 @@
+{
+    "id": "partygate",
+    "catalogue": "catalogue.ttl",
+    "processing": "turtle",
+    "input": "partygate.ttl"
+}
+

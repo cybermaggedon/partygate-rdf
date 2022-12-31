@@ -1,0 +1,38 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+schema:domainIncludes a rdfs:Property ;
+    rdfs:label "domain includes" .
+
+schema:rangeIncludes a rdfs:Property ;
+    rdfs:label "range includes" .
+
+schema:isPartOf a rdfs:Property ;
+    rdfs:label "is part of" .
+
+schema:source a rdfs:Property ;
+    rdfs:label "source" .
+
+schema:supersededBy a rdfs:Property ;
+    rdfs:label "superseded by" .
+
+schema:inverseOf a rdfs:Property ;
+    rdfs:label "inverse of" .
+
+skos:core a rdfs:Property ;
+    rdfs:label "core" .
+
+dcterms:source a rdfs:Property ;
+    rdfs:label "inverse of" .
+
+schema:sameAs a rdfs:Property ;
+    rdfs:label "same as" .
+
+skos:closeMatch a rdfs:Property ;
+    rdfs:label "close match" .
+
+skos:exactMatch a rdfs:Property ;
+    rdfs:label "exact match" .
+

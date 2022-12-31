@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+#
+# Main command-line script loads all data files and emits the knowledge
+# graph on standard output in Turtle format.
+#
+# Usage:
+#     curate <data-dir> <schema>
+#
+# Schema is in Turtle format.
+#
+
+import sys
+import logging
+
+from lib.exceptions import *
+from lib.curator import *
+
+if len(sys.argv) != 3:
+   sys.stderr.write("Usage:\n")
+   sys.stderr.write("    curate <data-dir> <schemafile>\n")
+   sys.exit(1)
+
+# Set up logging and format
+format = '%(asctime)s %(levelname)s: %(message)s'
+logging.basicConfig(format=format, level=logging.DEBUG)
+
+try:
+   
+   c = Curator()
+
+   logging.info("Loading schema...")
+   c.load_schema(sys.argv[2])
+
+   logging.info("Process inputs...")
+   g = c.walk(sys.argv[1])
+   logging.info("Complete")
+
+except MetadataError as e:
+   logging.error(f"Metadata error in {e.dir}: {e}")
+   sys.exit(1)
+except FileProcessingError as e:
+   logging.error(f"Error in {e.file}: {e}")
+   sys.exit(1)
+except LineProcessingError as e:
+   logging.error(f"Error in {e.file} line {e.line}: {e}")
+   sys.exit(1)
+except PredicateNotKnown as e:
+   logging.error(f"Predicate {e.predicate} not known")
+   sys.exit(1)
+
+# Graph is loaded, serialise in Turtle format on standard output
+logging.info("Output in Turtle format...")
+print(g.serialize(format="turtle"))
+logging.info("Output complete")
+

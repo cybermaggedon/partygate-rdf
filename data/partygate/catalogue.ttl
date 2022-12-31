@@ -1,0 +1,15 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://e623fd-ukraine/> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dataset: <http://pivotlabs.vc/innov/dataset/> .
+@prefix schema: <https://schema.org/> .
+
+dataset:ukraine
+  a schema:Dataset ;
+  rdfs:label "Ukraine news, early 2022" ;
+  schema:headline "Ukraine news, early 2022" ;
+  schema:keywords "ukraine"@en, "russia"@en, "news"@en, "military"@en,
+    "combat"@en;
+  schema:description "Various news articles about the invasion of Ukraine, 2022"  .
