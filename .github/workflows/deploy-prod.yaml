@@ -105,7 +105,7 @@ jobs:
           command: up
           stack-name: prod
           work-dir: pulumi
-          cloud-url: gs://pivotlabs-deploy/prod
+          cloud-url: gs://partygate-deploy/prod
         env:
           PULUMI_CONFIG_PASSPHRASE: ""
           WEB_IMAGE_VERSION: ${{ steps.version.outputs.VERSION }}
