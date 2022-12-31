@@ -1,6 +1,7 @@
-
+/*
 import * as pulumi from "@pulumi/pulumi";
 import * as gcp from "@pulumi/gcp";
+import { local } from "@pulumi/command";
 
 const webVersion = process.env.WEB_IMAGE_VERSION;
 const sparqlVersion = process.env.SPARQL_IMAGE_VERSION;
@@ -11,11 +12,44 @@ if (!webVersion)
 if (!sparqlVersion)
     throw Error("SPARQL_IMAGE_VERSION not defined");
 
+if (!process.env.ARTIFACT_REPO)
+    throw Error("ARTIFACT_REPO not defined");
+
+if (!process.env.ARTIFACT_REPO_REGION)
+    throw Error("ARTIFACT_REPO_REGION not defined");
+
+if (!process.env.ARTIFACT_NAME)
+    throw Error("ARTIFACT_NAME not defined");
+
+if (!process.env.GCP_PROJECT)
+    throw Error("GCP_PROJECT not defined");
+
+if (!process.env.GCP_REGION)
+    throw Error("GCP_REGION not defined");
+
+if (!process.env.ENVIRONMENT)
+    throw Error("ENVIRONMENT not defined");
+
+if (!process.env.CLOUD_RUN_REGION)
+    throw Error("CLOUD_RUN_REGION not defined");
+
+if (!process.env.WEB_MIN_SCALE)
+    throw Error("WEB_MIN_SCALE not defined");
+
+if (!process.env.WEB_MAX_SCALE)
+    throw Error("WEB_MAX_SCALE not defined");
+
+if (!process.env.SPARQL_MIN_SCALE)
+    throw Error("SPARQL_MIN_SCALE not defined");
+
+if (!process.env.SPARQL_MAX_SCALE)
+    throw Error("SPARQL_MAX_SCALE not defined");
+
 const provider = new gcp.Provider(
     "gcp",
     {
-	project: "partygate",
-	region: "europe-west1",
+	project: process.env.GCP_PROJECT,
+	region: process.env.GCP_REGION,
     }
 );
 
@@ -49,31 +83,92 @@ const enableCloudDns = new gcp.projects.Service(
     }
 );
 
-const repo = "europe-west1-docker.pkg.dev/partygate/partygate";
+const enableArtifactRegistry = new gcp.projects.Service(
+    "enable-artifact-registry",
+    {
+	service: "artifactregistry.googleapis.com",
+    },
+    {
+	provider: provider
+    }
+);
 
-const webImage = repo + "/web:" + webVersion;
-const sparqlImage = repo + "/sparql:" + sparqlVersion;
+const repo = process.env.ARTIFACT_REPO;
+
+const artifactRepo = new gcp.artifactregistry.Repository(
+    "artifact-repo",
+    {
+	description: "repository for " + process.env.ENVIRONMENT,
+	format: "DOCKER",
+	location: process.env.ARTIFACT_REPO_REGION,
+	repositoryId: process.env.ARTIFACT_NAME,
+    },
+    {
+	provider: provider,
+	dependsOn: enableArtifactRegistry,
+    }
+);
+
+const localWebImageName = "web:" + webVersion;
+const localSparqlImageName = "sparql:" + sparqlVersion;
+
+const webImageName = repo + "/web:" + webVersion;
+const sparqlImageName = repo + "/sparql:" + sparqlVersion;
+
+const taggedWebImage = new local.Command(
+    "web-docker-tag-command",
+    {
+	create: "docker tag " + localWebImageName + " " + webImageName,
+    }
+);
+
+const taggedSparqlImage = new local.Command(
+    "sparql-docker-tag-command",
+    {
+	create: "docker tag " + localSparqlImageName + " " + sparqlImageName,
+    }
+);
+
+const webImage = new local.Command(
+    "web-docker-push-command",
+    {
+	create: "docker push " + webImageName,
+    },
+    {
+	dependsOn: [taggedWebImage, artifactRepo],
+    }
+);
+
+const sparqlImage = new local.Command(
+    "sparql-docker-push-command",
+    {
+	create: "docker push " + sparqlImageName,
+    },
+    {
+	dependsOn: [taggedSparqlImage, artifactRepo],
+    }
+);
 
 const sparqlService = new gcp.cloudrun.Service(
     "sparql-service",
     {
-	name: "sparql",
-	location: "europe-west1",
+	name: "sparql-" + process.env.ENVIRONMENT,
+	location: process.env.CLOUD_RUN_REGION,
 	template: {
 	    metadata: {
 		labels: {
 		    version: "v" + sparqlVersion.replace(/\./g, "-"),
 		},		
 		annotations: {
-                    "autoscaling.knative.dev/minScale": "0",
-                    "autoscaling.knative.dev/maxScale": "1",
+                    "autoscaling.knative.dev/minScale": process.env.SPARQL_MIN_SCALE,
+                    "autoscaling.knative.dev/maxScale": process.env.SPARQL_MAX_SCALE,
 		}
 	    },
             spec: {
 		containerConcurrency: 1000,
 		containers: [
 		    {
-			image: sparqlImage,
+			image: sparqlImageName,
 			ports: [
                             {
 				"name": "http1", // Must be http1 or h2c.
@@ -93,11 +188,12 @@ const sparqlService = new gcp.cloudrun.Service(
     },
     {
 	provider: provider,
-	dependsOn: [enableCloudRun],
+	dependsOn: [enableCloudRun, sparqlImage],
     }
 );
 
 const sparqlUrl = sparqlService.statuses[0].url;
+
 
 export const sparqlResource = sparqlUrl.apply(
     x => x.replace(/^https:\/\//, "")
@@ -106,23 +202,23 @@ export const sparqlResource = sparqlUrl.apply(
 const webService = new gcp.cloudrun.Service(
     "web-service",
     {
-	name: "web",
-	location: "europe-west1",
+	name: "web-" + process.env.ENVIRONMENT,
+	location: process.env.CLOUD_RUN_REGION,
 	template: {
 	    metadata: {
 		labels: {
 		    version: "v" + webVersion.replace(/\./g, "-"),
 		},		
 		annotations: {
-                    "autoscaling.knative.dev/minScale": "0",
-                    "autoscaling.knative.dev/maxScale": "1",
+                    "autoscaling.knative.dev/minScale": process.env.WEB_MIN_SCALE,
+                    "autoscaling.knative.dev/maxScale": process.env.WEB_MAX_SCALE,
 		}
 	    },
             spec: {
 		containerConcurrency: 1000,
 		containers: [
 		    {
-			image: webImage,
+			image: webImageName,
 			ports: [
                             {
 				"name": "http1", // Must be http1 or h2c.
@@ -134,7 +230,10 @@ const webService = new gcp.cloudrun.Service(
 			    "0:8080",                // Listen
 			    sparqlResource,	     // SPARQL API resource
 			    "https",		     // SPARQL scheme
-			    "",			     // Base
+			    ".",		     // Base
+			],
+			envs: [
+                            { name: "ASD", value: "DEF" }
 			],
 			resources: {
                             limits: {
@@ -149,7 +248,7 @@ const webService = new gcp.cloudrun.Service(
     },
     {
 	provider: provider,
-	dependsOn: [enableCloudRun],
+	dependsOn: [enableCloudRun, webImage],
     }
 );
 
@@ -190,61 +289,4 @@ const sparqlNoAuthPolicy = new gcp.cloudrun.IamPolicy(
 	provider: provider,
     }
 );
-
-/*
-const webDomainMapping = new gcp.cloudrun.DomainMapping(
-    "web-domain-mapping",
-    {
-	"name": "thing.whatever.domain",
-	location: "europe-west1",
-	metadata: {
-	    namespace: "partygate",
-	},
-	spec: {
-	    routeName: webService.name,
-	}
-    },
-    {
-	provider: provider
-    }
-);
-
-// Get rrdata from domain mapping.
-export const webhost = webDomainMapping.statuses.apply(
-    x => x[0].resourceRecords
-).apply(
-    x => x ? x[0] : { rrdata: "" }
-).apply(
-    x => x.rrdata
-);
-
-const innovateZone = new gcp.dns.ManagedZone(
-    "innovate-zone",
-    {
-	name: "innovate",
-	description: "innovate.domain",
-	dnsName: "innovate.domain.",
-	labels: {
-	},
-    },
-    {
-	provider: provider,
-	dependsOn: [enableCloudDns],
-    }
-);
-
-const recordSet = new gcp.dns.RecordSet(
-    "web-record",
-    {
-	name: pulumi.interpolate`graph.${innovateZone.dnsName}`,
-	managedZone: innovateZone.name,
-	type: "CNAME",
-	ttl: 300,
-	rrdatas: [webhost],
-    },
-    {
-	provider: provider,
-    }
-);
-
 */

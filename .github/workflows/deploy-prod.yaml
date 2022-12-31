@@ -1,5 +1,5 @@
 
-name: Publish docker images
+name: Deploy to production
 
 on:
   workflow_dispatch:
@@ -9,17 +9,15 @@ on:
     tags:
       - 'v*'
 
-  pull_request:
-
 permissions:
   contents: read
   id-token: 'write'
 
 jobs:
 
-  container-push:
+  deploy:
 
-    name: Container push
+    name: Deploy to production
     runs-on: ubuntu-latest
 
     steps:
@@ -33,16 +31,17 @@ jobs:
 
       - name: Install packages
         run: sudo apt update &&
-          sudo apt install golang-go
+            sudo apt install -y redland-utils librdf-storage-sqlite &&
+            sudo apt install -y python3-rdflib
 
-      - name: Build
-        run: make lodlive serve
+      - name: Assemble RDF data
+        run: make curate
 
       - name: Extract metadata for web container
         id: meta-web
         uses: docker/metadata-action@v4
         with:
-          images: europe-west1-docker.pkg.dev/partygate/partygate/web
+          images: web
           tags: |
             type=ref,event=branch
             type=ref,event=pr
@@ -54,7 +53,7 @@ jobs:
         id: meta-sparql
         uses: docker/metadata-action@v4
         with:
-          images: europe-west1-docker.pkg.dev/partygate/partygate/sparql
+          images: sparql
           tags: |
             type=ref,event=branch
             type=ref,event=pr
@@ -83,19 +82,19 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: true
+          push: false
           tags: ${{ steps.meta-web.outputs.tags }}
           labels: ${{ steps.meta-web.outputs.labels }}
-          file: Dockerfile.web
+          file: Containerfile.web
 
       - name: Build and push sparql
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: true
+          push: false
           tags: ${{ steps.meta-sparql.outputs.tags }}
           labels: ${{ steps.meta-sparql.outputs.labels }}
-          file: Dockerfile.sparql
+          file: Containerfile.sparql
 
       - name: Install Pulumi
         run: cd pulumi && npm install
@@ -106,8 +105,19 @@ jobs:
           command: up
           stack-name: prod
           work-dir: pulumi
-          cloud-url: gs://partygate-deploy/prod
+          cloud-url: gs://pivotlabs-deploy/prod
         env:
-          PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}
+          PULUMI_CONFIG_PASSPHRASE: ""
           WEB_IMAGE_VERSION: ${{ steps.version.outputs.VERSION }}
           SPARQL_IMAGE_VERSION: ${{ steps.version.outputs.VERSION }}
+          GCP_PROJECT: partygate
+          GCP_REGION: europe-west1
+          CLOUD_RUN_REGION: europe-west1
+          ARTIFACT_REPO: europe-west1-docker.pkg.dev/partygate/partygate
+          ARTIFACT_NAME: partygate
+          ARTIFACT_REPO_REGION: europe-west1
+          SPARQL_MIN_SCALE: "0"
+          SPARQL_MAX_SCALE: "1"
+          WEB_MIN_SCALE: "0"
+          WEB_MAX_SCALE: "1"
+          ENVIRONMENT: "prod"

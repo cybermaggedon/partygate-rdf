@@ -1,11 +1,12 @@
 {
-    "name": "partygate",
+    "name": "inno-graph",
     "main": "index.ts",
     "devDependencies": {
         "@types/node": "^14"
     },
     "dependencies": {
-        "@pulumi/gcp": "^6.44.0",
+        "@pulumi/command": "^0.7.0",
+        "@pulumi/gcp": "^6.0.0",
         "@pulumi/pulumi": "^3.0.0"
     }
 }

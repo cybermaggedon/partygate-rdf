@@ -1,47 +1,45 @@
 
-VERSION=1.5
+VERSION=$(shell git describe | sed 's/^v//')
 
 all:
-	rapper -i turtle -o ntriples partygate.ttl > partygate.ntriples
-	rapper -i turtle -o rdfxml partygate.ttl > partygate.rdf
-	rapper -i turtle -o json partygate.ttl > partygate.json
-	rdfproc -n -s sqlite partygate.db parse partygate.ttl turtle
 
-serve:
-	go build proxy/serve.go
+curate:
+	rm -f data.db
+	make turtle
+	rdfproc -n -s sqlite -t synchronous=off data.db parse data.ttl turtle
 
-lodlive:
-	git clone http://github.com/cybermaggedon/lodlive
-	(cd lodlive; git checkout default-local)
-	cp query.html lodlive/
-	cp lodlive.profile.js lodlive/js/
+# RDFlib doesn't seem to output prefix for rdf: namespace?!
+turtle:
+	./process/curate data schema > data.ttl.tmp
+	( \
+	  echo '@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .';\
+	  cat data.ttl.tmp; \
+	) > data.ttl
+	rm -f data.ttl.tmp
 
-CONTAINER=partygate/web
-CONTAINER2=partygate/sparql
+REPO=europe-west1-docker.pkg.dev/cyberapocalypse/ukraine
+WEB_CONTAINER=${REPO}/web:${VERSION}
+SPARQL_CONTAINER=${REPO}/sparql:${VERSION}
 
-WEB_CONTAINER=docker.io/cybermaggedon/partygate-web:${VERSION}
-SPARQL_CONTAINER=docker.io/cybermaggedon/partygate-sparql:${VERSION}
-
-containers: lodlive serve Dockerfile.web Dockerfile.sparql
-	docker build -t partygate-web -f Dockerfile.web .
-	docker tag partygate-web ${WEB_CONTAINER}
-	docker build -t partygate-sparql -f Dockerfile.web .
-	docker tag partygate-sparql ${SPARQL_CONTAINER}
+images: curate
+	docker build -f Containerfile.web -t web .
+	docker build -f Containerfile.sparql -t sparql .
+	docker tag web ${WEB_CONTAINER}
+	docker tag sparql ${SPARQL_CONTAINER}
 
 push:
-	sudo buildah push docker.io/cybermaggedon/partygate-web:${VERSION}
-	sudo buildah push docker.io/cybermaggedon/partygate-web:latest
-	sudo buildah push docker.io/cybermaggedon/partygate-sparql:${VERSION}
-	sudo buildah push docker.io/cybermaggedon/partygate-sparql:latest
+	docker push ${WEB_CONTAINER}
+	docker push ${SPARQL_CONTAINER}
 
-run:
-	sudo podman run -d --name web \
+clean:
+	-rm -f ${PROJECT}.db
+
+	podman run -d --name web \
 		-p 8080/tcp --expose=8080 \
-		--ip=10.88.1.1 --add-host sparql:10.88.1.2 \
-		docker.io/cybermaggedon/partygate-web:${VERSION}
-	sudo podman run -d --name sparql -p 8089/tcp --ip=10.88.1.2 \
-		docker.io/cybermaggedon/partygate-sparql:${VERSION}
+		${WEB_CONTAINER}
+	podman run -d --name sparql -p 8089/tcp \
+		${SPARQL_CONTAINER}
 
 stop:
-	sudo podman rm -f web sparql
+	podman rm -f web sparql
 

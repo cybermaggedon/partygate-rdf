@@ -1,5 +1,0 @@
-
-FROM docker.io/cybermaggedon/sparql-service:1.0
-
-COPY partygate.db /data/data.db
-
