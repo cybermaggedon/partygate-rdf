@@ -107,7 +107,7 @@ jobs:
           work-dir: pulumi
           cloud-url: gs://partygate-deploy/prod
         env:
-          PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}
+          PULUMI_CONFIG_PASSPHRASE: ""
           WEB_IMAGE_VERSION: ${{ steps.version.outputs.VERSION }}
           SPARQL_IMAGE_VERSION: ${{ steps.version.outputs.VERSION }}
           GCP_PROJECT: partygate
