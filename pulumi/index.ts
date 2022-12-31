@@ -1,4 +1,4 @@
-/*
+
 import * as pulumi from "@pulumi/pulumi";
 import * as gcp from "@pulumi/gcp";
 import { local } from "@pulumi/command";
@@ -289,4 +289,3 @@ const sparqlNoAuthPolicy = new gcp.cloudrun.IamPolicy(
 	provider: provider,
     }
 );
-*/
