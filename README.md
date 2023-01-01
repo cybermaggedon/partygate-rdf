@@ -15,7 +15,7 @@ The dataset contains links to some published reports for sourcing.
 ## Demo
 
 There is a demo which allows easy navigation of the data at
-https://web-wrennwfy6q-ew.a.run.app.  This is powered by the
+https://web-prod-wrennwfy6q-ew.a.run.app.  This is powered by the
 [LodLive](http://lodlive.it) SPARQL navigator, and a SPARQL endpoint serving
 the data.
 
