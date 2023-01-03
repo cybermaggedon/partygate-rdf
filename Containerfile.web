@@ -1,3 +1,3 @@
 
-FROM docker.io/cybermaggedon/sparql-explorer:1.4.2
+FROM docker.io/cybermaggedon/sparql-explorer:1.6.1
 
