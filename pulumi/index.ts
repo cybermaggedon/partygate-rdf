@@ -152,7 +152,7 @@ const sparqlImage = new local.Command(
 const sparqlService = new gcp.cloudrun.Service(
     "sparql-service",
     {
-	name: "sparql-" + process.env.ENVIRONMENT,
+	name: "partygate-sparql-" + process.env.ENVIRONMENT,
 	location: process.env.CLOUD_RUN_REGION,
 	template: {
 	    metadata: {
@@ -202,7 +202,7 @@ export const sparqlResource = sparqlUrl.apply(
 const webService = new gcp.cloudrun.Service(
     "web-service",
     {
-	name: "web-" + process.env.ENVIRONMENT,
+	name: "partygate-web-" + process.env.ENVIRONMENT,
 	location: process.env.CLOUD_RUN_REGION,
 	template: {
 	    metadata: {
