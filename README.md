@@ -15,31 +15,20 @@ The dataset contains links to some published reports for sourcing.
 ## Demo
 
 There is a demo which allows easy navigation of the data at
-https://web-prod-wrennwfy6q-ew.a.run.app.  This is powered by the
-[LodLive](http://lodlive.it) SPARQL navigator, and a SPARQL endpoint serving
-the data.
+[SPARQL Sleuth](https://partygate-web-prod-wrennwfy6q-ew.a.run.app/graph?run-search=Boris).  This is powered by the
+[SPARQL Sleuth](https://github.com/cybermaggedon/sparql-sleuth) SPARQL navigator, and a SPARQL endpoint serving the data.
 
-<img src="screenshot.png" width="50%" height="50%">
+Here are some interesting entry points:
 
-The front page doesn't make it easy to find data items, here are some
-interesting entry points:
-
-- [May 15 2020, Wine and Cheese party](https://web-wrennwfy6q-ew.a.run.app/?http://e623fd-partygate/may-15-wine-cheese)
-- [Suitcase of wine party](https://web-wrennwfy6q-ew.a.run.app/?http://e623fd-partygate/suitcase-of-wine)
-- [Dec 18 2020, 10 Downing Street](https://web-wrennwfy6q-ew.a.run.app/?http://e623fd-partygate/dec-18-no10-party)
-- [Dec 14 2020, CCHQ](https://web-wrennwfy6q-ew.a.run.app/?http://e623fd-partygate/dec-14-cchq)
-- [Alcohol](https://web-wrennwfy6q-ew.a.run.app/?http://e623fd-partygate/alcohol) -
-  this is a representation of the consumption of alcohol.
-- [Party](https://web-wrennwfy6q-ew.a.run.app/?http://e623fd-partygate/party) -
-  This information node represents the concept of the party 'type'.
-- [Number 10](https://web-wrennwfy6q-ew.a.run.app/?http://e623fd-partygate/no-10) -
-  this node represents the location of 10 Downing Street.
-- [London tier 2 lockdown](https://web-wrennwfy6q-ew.a.run.app/?http://e623fd-partygate/london-tier-2-lockdown) - this node represents the context of the London lockdown in late 2022.
+- [May 15 2020, Wine and Cheese party](https://partygate-web-prod-wrennwfy6q-ew.a.run.app/graph?node=http:%2F%2Fe623fd-partygate%2Fmay-15-wine-cheese&announce=no)
+- [Suitcase of wine party](https://partygate-web-prod-wrennwfy6q-ew.a.run.app/graph?node=http:%2F%2Fe623fd-partygate%2Fsuitcase-of-wine&announce=no)
+- [Dec 18 2020, 10 Downing Street](https://partygate-web-prod-wrennwfy6q-ew.a.run.app/graph?node=http:%2F%2Fe623fd-partygate%2Fdec-18-no10-party&announce=no)
+- [Dec 14 2020, CCHQ](https://partygate-web-prod-wrennwfy6q-ew.a.run.app/graph?node=http:%2F%2Fe623fd-partygate%2Fdec-14-cchq&announce=no)
+- [Alcohol](https://partygate-web-prod-wrennwfy6q-ew.a.run.app/graph?node=http:%2F%2Fe623fd-partygate%2Falcohol&announce=no) this is a representation of the consumption of alcohol.
 
 ## SPARQL endpoint
 
-There is a SPARQL endpoint at https://web-wrennwfy6q-ew.a.run.app/sparql,
-which accepts SPARQL 1.0 queries against the data.  Think of this as way
+There is a SPARQL endpoint at https://partygate-sparql-prod-wrennwfy6q-ew.a.run.app which accepts SPARQL 1.0 queries against the data.  Think of this as a way
 to run a query against the underlying data.  There is no visualisation,
 the SPARQL endpoint is there to allow other applications to access the data.
 This endpoint can be queried from Python using
